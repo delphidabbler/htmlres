@@ -1,0 +1,176 @@
+@PROJECT_NAME           HTML Resource Compiler
+@PROJECT_DESC           Application that creates RT_HTML resources from HTML and
+                        associated files.
+@AUTHOR                 P.D.Johnson, LLANARTH, Ceredigion, Wales, UK.
+@WEBSITE                http://www.delphidabbler.com/
+@COPYRIGHT              © Peter D Johnson, 2004-2008
+@ROOT
+@HISTORY(
+  @REVISION(
+    @VERSION            1.0
+    @DATE               26/06/2004
+    @COMMENTS           Original version.
+    @COMPILERS          + Delphi 4
+                        + Version Information Editor v2.10.1
+    @FILES(
+      @NEW(
+        @FILE           HTMLRes.dpr
+        @VERSION        1.0
+      )
+      @NEW(
+        @FILE           UErrors.pas
+        @VERSION        1.0
+      )
+      @NEW(
+        @FILE           UMain.pas
+        @VERSION        1.0
+      )
+      @NEW(
+        @FILE           UParams.pas
+        @VERSION        1.0
+      )
+      @NEW(
+        @FILE           UResourceFile.pas
+        @VERSION        1.0
+      )
+      @NEW(
+        @FILE           UResourceUtils.pas
+        @VERSION        1.0
+      )
+      @NEW(
+        @FILE           VHTMLRes.vi
+        @DATE           26/06/2004
+        @COMMENTS       Version information. File and product numbers set to
+                        1.0.0.
+      )
+    )
+  )
+  @REVISION(
+    @VERSION            1.0.1 (build 2)
+    @DATE               18/09/2004
+    @COMMENTS           Modified to use resource file handling code in
+                        DelphiDabbler library unit PJResFile rather than own
+                        custom code.
+    @COMPILERS          + Delphi 4
+                        + Version Information Editor v2.10.1
+    @FILES(
+      @REMOVED          UResourceFile.pas
+      @REMOVED          UResourceUtils.pas
+      @UPDATED(
+        @FILE           HTMLRes.dpr
+        @VERSION        1.1
+      )
+      @UPDATED(
+        @FILE           UMain.pas
+        @VERSION        1.1
+      )
+      @UPDATED(
+        @FILE           VHTMLRes.vi
+        @DATE           18/09/2004
+        @COMMENTS       + Updated file and product version numbers to 1.0.1.
+                        + Changed file description to "HTML Resource Compiler".
+                        + Changed product description to "DelphiDabbler HTML
+                          Resource Compiler".
+      )
+    )
+  )
+  @REVISION(
+    @VERSION            1.1 (build 3)
+    @DATE               29/05/2006
+    @COMMENTS           + Added new -r command line switch that enables manifest
+                          files to reference files relative to manifest rather
+                          than directory HTMLRes executed from.
+                        + Updated message displayed when program starts.
+                        + Changed to new open source license for executable code
+                          (source still available under MPL).
+    @COMPILERS          + Delphi 4
+                        + Version Information Editor v2.11.0
+    @FILES(
+      @UPDATED(
+        @FILE           HTMLRes.dpr
+        @VERSION        1.2
+      )
+      @UPDATED(
+        @FILE           UErrors.pas
+        @VERSION        1.1
+      )
+      @UPDATED(
+        @FILE           UMain.pas
+        @VERSION        1.2
+      )
+      @UPDATED(
+        @FILE           UParams.pas
+        @VERSION        1.1
+      )
+      @UPDATED(
+        @FILE           VHTMLRes.vi
+        @DATE           29/05/2006
+        @COMMENTS       + Removed Comments string re license.
+                        + Updated file, product and build numbers to 1.1.0,
+                          build number 3.
+                        + Updated Copyright string and dates.
+      )
+    )
+  )
+  @REVISION(
+    @VERSION            1.2 (build 4)
+    @DATE               23/08/2008
+    @COMMENTS           + Added facility to insert or update resources in
+                          existing output resource files. Options controlled by
+                          new -u switch.
+                        + Replaced command line installer to windows installed
+                          built with Inno Setup installer.
+                        + Added new build script that can build program and
+                          installer.
+    @COMPILERS          + Delphi 7
+                        + Version Information Editor v2.11.2
+                        + Borland Resource Compiler v5.4
+    @FILES(
+      @UPDATED(
+        @FILE           HTMLRes.dpr
+        @VERSION        1.3
+      )
+      @NEW(
+        @FILE           HTMLRes.rc
+        @VERSION        1.0
+      )
+      @NEW(
+        @FILE           HTMLRes.manifest
+        @VERSION        1.0
+      )
+      @UPDATED(
+        @FILE           UErrors.pas
+        @VERSION        1.2
+      )
+      @UPDATED(
+        @FILE           UMain.pas
+        @VERSION        1.3
+      )
+      @UPDATED(
+        @FILE           UParams.pas
+        @VERSION        1.2
+      )
+      @NEW(
+        @FILE           UVerInfo.pas
+        @VERSION        1.0
+      )
+      @UPDATED(
+        @FILE           VHTMLRes.vi
+        @DATE           21/08/2008
+        @COMMENTS       + Updated file and product numbers to 1.2.0, build 4.
+                        + Deleted RC Comments and Resource output directory
+                          entries.
+      )
+      @NEW(
+        @FILE           Build.bat
+        @VERSION        1.0
+        @COMMENTS       Build script.
+      )
+      @NEW(
+        @FILE           Install.iss
+        @VERSION        1.0
+        @COMMENTS       Script used to create Inno Setup installer.
+      )
+    )
+  )
+)

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--
+  HTMLRes.manifest
+
+  Manifest file for HTML Resource Compiler. Specifies execution level required
+  for Vista.
+
+  v1.0 of 21 Aug 2008  -  Original version that permits application to run
+                          without elevation on Vista.
+-->
+
+
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity
+    type="win32"
+    name="HTMLRes"
+    version="1.0.0.0"
+    processorArchitecture="*"
+  />
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel level="asInvoker" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>
+

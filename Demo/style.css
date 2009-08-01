@@ -1,0 +1,18 @@
+/* Demo code style sheet */
+
+body {
+  font-family: "Arial" sans-serif;
+  font-size: 9pt;
+  background-color: white;
+}
+
+h1 {
+  font-size: 14pt;
+  color: #666699;
+  background-color: #FFFFCC;
+}
+
+p {
+  font-size: 9pt;
+}
+
