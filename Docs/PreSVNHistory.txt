@@ -1,0 +1,281 @@
+================================================================================
+
+HTMLRES: Historical update information from v1.0.0 to v1.2.0
+
+================================================================================
+
+This file records known changes to files and releases of HTMLRes from the first
+release (v1.0) until release 1.2 when the project was placed was placed under
+version control with Subversion.
+
+There are three sections:
+  + Files: Lists all source code and development tools and provides details of
+    changes to these files that preceded version control.
+  + Releases: Lists all the releases of BDiff / BPatch and notes which file
+    revisions were included in each release.
+  + Compilers: Lists the compilers required to build each release.
+
+================================================================================
+FILES
+================================================================================
+
+This section lists all files for which update history is known between v1.0.0
+and v1.2.0.
+
+--------------------------------------------------------------------------------
+DevTools\BuildAll.bat
+--------------------------------------------------------------------------------
+v1.0 of 23 Aug 2008  - Original version
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\BuildPascal.bat
+--------------------------------------------------------------------------------
+v1.0 of 21 Aug 2008  - First version.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\BuildResources.bat
+--------------------------------------------------------------------------------
+v1.0 of 21 Aug 2008  - First version.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\BuildSetup.bat
+--------------------------------------------------------------------------------
+v1.0 of 23 Aug 2008  - First version.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\ReleaseAll.bat
+--------------------------------------------------------------------------------
+v1.0 of 23 Aug 2008  - First version.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\ReleaseExe.bat
+--------------------------------------------------------------------------------
+v1.0 of 23 Aug 2008  - First version.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\ReleaseSrc.bat
+--------------------------------------------------------------------------------
+v1.0 of 21 Aug 2008  - First version.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+DevTools\Tidy.bat
+--------------------------------------------------------------------------------
+v1.0 of 21 Aug 2008  - First version.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Docs\HTMLRes.phf
+--------------------------------------------------------------------------------
+        26 Jun 2004  - New project update file for HTMLRes v1.0 build 1.
+        18 Sep 2004  - Added details of HTMLRes v1.0.1 build 2.
+        29 May 2006  - Added details of HTMLRes v1.1 build 3.
+        23 Aug 2008  - Added details of HTMLRes v1.2 build 4.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Build.bat
+--------------------------------------------------------------------------------
+v1.0 of 23 Aug 2008  - Original version
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\HTMLRes.dpr
+--------------------------------------------------------------------------------
+v1.0 of 26 Jun 2004  - Original version.
+v1.1 of 18 Sep 2004  - Removed UResourceFile and UResourceUtils units.
+v1.2 of 29 May 2006  - Updated commenting.
+v1.3 of 21 Aug 2008  - Added new UVerInfo unit.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\HTMLRes.manifest
+--------------------------------------------------------------------------------
+v1.0 of 21 Aug 2008  - Original version that permits application to run without
+                       elevation on Vista.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\HTMLRes.rc
+--------------------------------------------------------------------------------
+v1.0 of 21 Aug 2008  - Original version. Contains only manifest file.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\Install.iss
+--------------------------------------------------------------------------------
+v1.0 of 23 Aug 2008  - Original version.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\UErrors.pas
+--------------------------------------------------------------------------------
+v1.0 of 26 Jun 2004  - Original version.
+v1.1 of 28 May 2006  - Rewrote commenting.
+                     - Renamed error code constants.
+v1.2 of 21 Aug 2008  - Added new ErrOutFileExists, cErrBadOutFile and
+                       cErrResourceExists error constants.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\UMain.pas
+--------------------------------------------------------------------------------
+v1.0 of 26 Jun 2004  - Original version.
+v1.1 of 18 Sep 2004  - Replaced project's own resource file handling code with
+                       PJResFile library unit. Modified class names and method
+                       calls to suit. Now uses constants from PJResFile for
+                       memory flags and HTML resource type.
+v1.2 of 29 May 2006  - Revised help message re new -r command line switch
+                       that enables program to use paths relative to manifest
+                       file rather than program's default directory.
+                     - Changed to use renamed error constants.
+                     - Changed to use PJVersionInfo component to get version
+                       information. Now gets copyright information from version
+                       information resource.
+                     - Deleted reference to MPL in sign on message.
+                     - Rewrote commenting.
+v1.3 of 23 Aug 2008  - Revised to be able to insert resources into existing
+                       resource files (failing or overwriting duplicate 
+                       resources) or to fail if resource file exists.
+                     - Now always creates language neutral resources rather than
+                       user's current language.
+                     - Added compiler directive to switch off unsafe warnings.
+                     - Updtated help screen and other messages re new -u switch
+                       and its implementation.
+                     - Changed to use singleton Params object rather managing
+                       own TParams object.
+                     - Moved routines that get version information to own unit.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\UParams.pas
+--------------------------------------------------------------------------------
+v1.0 of 26 Jun 2004  - Original version.
+v1.1 of 28 May 2006  - Added new -r command line switch and code to support it.
+                     - Rewrote commenting.
+v1.2 of 21 Aug 2008  - Converted to singleton object.
+                     - Added new -u switch that governs how any existing
+                       resource file is updated.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\UResourceFile.pas
+--------------------------------------------------------------------------------
+v1.0 of 26 Jun 2004  - Original version
+        18 Sep 2004  - DELETED
+
+--------------------------------------------------------------------------------
+Src\UResourceUtils.pas
+--------------------------------------------------------------------------------
+v1.0 of 26 Jun 2004  - Original version
+        18 Sep 2004  - DELETED
+
+--------------------------------------------------------------------------------
+Src\UVerInfo.pas
+--------------------------------------------------------------------------------
+v1.0 of 21 Aug 2008  - Original version.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+--------------------------------------------------------------------------------
+Src\VHTMLRes.vi
+--------------------------------------------------------------------------------
+        26 Jun 2004  - Version information. File and product numbers set to
+                       1.0.0.
+        18 Sep 2004  - Updated file and product version numbers to 1.0.1.
+                     - Changed file description to "HTML Resource Compiler".
+                     - Changed product description to "DelphiDabbler HTML
+                       Resource Compiler".
+        29 May 2006  - Removed Comments string re license.
+                     - Updated file, product and build numbers to 1.1.0, build
+                       number 3.
+                     - Updated Copyright string and dates.
+        23 Aug 2008  - Updated file and product numbers to 1.2.0, build 4.
+                     - Deleted RC Comments and Resource output directory
+                       entries.
+        01 Aug 2009  - MOVED TO SUBVERSION
+
+================================================================================
+RELEASES
+================================================================================
+
+This section lists all releases of HTMLRes from the first version (1.0) to 
+release 1.2. For each release the following is noted:
+
+  + Version and build number.
+  + Brief notes of changes to program.
+  + List of new and added source files.
+  
+The Development tools, .bpg and .cfg files, test files and documentation are not
+included in this information.
+
+--------------------------------------------------------------------------------
+v1.0 build 1 of 26 Jun 2004
+--------------------------------------------------------------------------------
+Notes:
+  + Original version.
+File changes:
+  + New: HTMLRes.dpr 1.0
+  + New: UErrors.pas 1.0
+  + New: UMain.pas 1.0
+  + New: UParams.pas 1.0
+  + New: UResourceFile.pas 1.0
+  + New: UResourceUtils.pas v1.0
+  + New: VHTMLRes.vi 26 Jun 2004
+
+--------------------------------------------------------------------------------
+v1.0.1 build 2 of 18 Sep 2004
+--------------------------------------------------------------------------------
+Notes:
+  + Modified to use resource file handling code in DelphiDabbler library unit
+    PJResFile rather than own custom code.
+File changes:
+  + Updated: HTMLRes.dpr 1.1
+  + Updated: UMain.pas 1.1
+  + Updated: VHTMLRes.vi 18 Sep 2004
+  + Removed: UResourceFile.pas
+  + Removed: UResourceUtils.pas
+
+--------------------------------------------------------------------------------
+v1.1 build 3 of 29 May 2006
+--------------------------------------------------------------------------------
+Notes:
+  + Added new -r command line switch that enables manifest files to reference
+    files relative to manifest rather than directory HTMLRes executed from.
+  + Updated message displayed when program starts.
+  + Changed to new open source license for executable code (source still
+    available under MPL)
+File changes:
+  + Updated: HTMLRes.dpr 1.2
+  + Updated: UErrors.pas 1.1
+  + Updated: UMain.pas 1.2
+  + Updated: UParams.pas 1.1
+  + Update: VHTMLRes.vi 29 May 2006
+
+--------------------------------------------------------------------------------
+v1.2 of build 4 23 Aug 2008
+--------------------------------------------------------------------------------
+Notes:
+  + Added facility to insert or update resources in existing output resource
+    files. Options controlled by new -u switch.
+  + Replaced command line installer to Windows installed built with Inno Setup
+    installer.
+  + Added new build script that can build program and installer.
+File changes:
+  + New: Build.bat
+  + Updated: HTMLRes.dpr 1.3
+  + New: HTMLRes.rc 1.0
+  + New: HTMLRes.manifest 1.0
+  + New: Install.iss 1.0
+  + Updated: UErrors.pas 1.2
+  + Updated: UMain.pas 1.3
+  + Updated: UParams.pas 1.2
+  + New: UVersionInfo.pas 1.0
+  + Update: VHTMLRes.vi 21 Aug 2006
+
+--------------------------------------------------------------------------------
