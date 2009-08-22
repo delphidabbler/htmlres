@@ -1,29 +1,19 @@
-
-¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 DELPHIDABBLER HTML RESOURCE COMPILER DEMO README
-________________________________________________________________________________
+================================================================================
 
+For information about how to use the demo code see UserGuide.pdf installed with
+HTML Resource Compiler in the Docs sub-directory. Alternatively see
+http://www.delphidabbler.com/subsid/sw-pdf/htmlres/userguide.pdf
 
-¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-License
-________________________________________________________________________________
-
-All the files in the Demo folder are entirely freeware. Use as you wish.
-
-
-¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-Disclaimer
-________________________________________________________________________________
+All the files in the HTML Resource Compiler's Demo folder (and only the Demo
+folder) are public domain with no rights reserved. Use as you wish.
 
 The demo code is provided as-is with all faults. Use the code at your own risk.
 The author makes no warranty of any kind as to the suitability of the code for
 any purpose and accepts no liability for any damages caused in using the code.
 
+--------------------------------------------------------------------------------
+$Rev$
+$Date$
+--------------------------------------------------------------------------------
 
-¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-Instructions for Use
-________________________________________________________________________________
-
-Instructions are presented in UserGuide.pdf in your the Docs folder.
-
-________________________________________________________________________________
