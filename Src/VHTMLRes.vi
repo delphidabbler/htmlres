@@ -1,40 +1,43 @@
-;===============================================================================
-;VHTMLRes.vi
+; ------------------------------------------------------------------------------
+; VHTMLRes.vi
 ;
-;Version information description file used to create VHTMLRes.res resource file
-;Build this file with DelphiDabbler Version Information Editor from
-;http://www.delphidabbler.com/
-;Compile the resulting .rc file using Borland BRCC32 resource compiler.
+; Version information description file used to create VHTMLRes.res resource
+; file.
 ;
-;WARNING: DO NOT EDIT DIRECTLY
-;===============================================================================
+; $Rev$
+; $Date$
 ;
-;***** BEGIN LICENSE BLOCK *****
+; Usage:
+;   1) Generate a .rc resource source file from this file using DelphiDabbler
+;      Version Information Editor (http://www.delphidabbler.com/vied).
+;   2) Use the Borland BRCC32 resource compiler to compile the .rc file.
 ;
-;Version: MPL 1.1
+; ***** BEGIN LICENSE BLOCK *****
 ;
-;The contents of this file are subject to the Mozilla Public License Version
-;1.1 (the "License"); you may not use this file except in compliance with the
-;License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+; Version: MPL 1.1
 ;
-;Software distributed under the License is distributed on an "AS IS" basis,
-;WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
-;the specific language governing rights and limitations under the License.
+; The contents of this file are subject to the Mozilla Public License Version
+; 1.1 (the "License"); you may not use this file except in compliance with the
+; License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
 ;
-;The Original Code is VHTMLRes.vi.
+; Software distributed under the License is distributed on an "AS IS" basis,
+; WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
+; the specific language governing rights and limitations under the License.
 ;
-;The Initial Developer of the Original Code is Peter Johnson
-;(http://www.delphidabbler.com/).
+; The Original Code is VHTMLRes.vi.
 ;
-;Portions created by the Initial Developer are Copyright (C) 2004-2008 Peter
-;Johnson. All Rights Reserved.
+; The Initial Developer of the Original Code is Peter Johnson
+; (http://www.delphidabbler.com/).
 ;
-;Contributor(s): None.
+; Portions created by the Initial Developer are Copyright (C) 2004-2009 Peter
+; Johnson. All Rights Reserved.
 ;
-;***** END LICENSE BLOCK *****
+; Contributor(s):
+;   NONE
 ;
-;===============================================================================
-;
+; ***** END LICENSE BLOCK *****
+; ------------------------------------------------------------------------------
+
 [Fixed File Info]
 File Version #=1, 2, 0, 4
 Product Version #=1, 2, 0, 0
@@ -43,9 +46,11 @@ File Type=1
 File Sub-Type=0
 File Flags Mask=0
 File Flags=0
+
 [Variable File Info]
 Language=2057
 Character Set=1252
+
 [String File Info]
 Comments=
 Company Name=DelphiDabbler
@@ -59,6 +64,7 @@ Private Build=
 Product Name=DelphiDabbler HTML Resource Compiler.
 Product Version=Release <#P1>.<#P2>.<#P3>
 Special Build=
+
 [Configuration Details]
 Identifier=VERINFO
 NumRCComments=0

@@ -4,12 +4,8 @@
  * Implements a custom exception class that incorporates an error code number
  * that HTMLRes uses as its exit code. Defines error code constants.
  *
- * v1.0 of 26 Jun 2004  - Original version.
- * v1.1 of 28 May 2006  - Rewrote commenting.
- *                      - Renamed error code constants.
- * v1.2 of 21 Aug 2008  - Added new ErrOutFileExists, cErrBadOutFile and
- *                        cErrResourceExists error constants.
- *
+ * $Rev$
+ * $Date$
  *
  * ***** BEGIN LICENSE BLOCK *****
  *
@@ -28,8 +24,11 @@
  * The Initial Developer of the Original Code is Peter Johnson
  * (http://www.delphidabbler.com/).
  *
- * Portions created by the Initial Developer are Copyright (C) 2004-2008 Peter
+ * Portions created by the Initial Developer are Copyright (C) 2004-2009 Peter
  * Johnson. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   NONE
  *
  * ***** END LICENSE BLOCK *****
 }

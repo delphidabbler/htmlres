@@ -4,38 +4,8 @@
  * Implements a class that handles the HTML Resource Compiler's main program
  * processing.
  *
- * Requires the following DelphiDabbler library files:
- *    - PJResFile resource file unit v1.0 (as of v1.1).
- *    - PJVersionInfo component v3.1.1 (as of v1.2).
- *
- * v1.0 of 26 Jun 2004  - Original version.
- * v1.1 of 18 Sep 2004  - Replaced project's own resource file handling code
- *                          with PJResFile library unit. Modified class names
- *                          and method calls to suit. Now uses constants from
- *                          PJResFile for memory flags and HTML resource type.
- * v1.2 of 29 May 2006  - Revised help message re new -r command line switch
- *                        that enables program to use paths relative to manifest
- *                        file rather than program's default directory.
- *                      - Changed to use renamed error constants.
- *                      - Changed to use PJVersionInfo component to get version
- *                        information. Now gets copyright information from
- *                        version information resource.
- *                      - Deleted reference to MPL in sign on message.
- *                      - Rewrote commenting.
- * v1.3 of 23 Aug 2008  - Revised to be able to insert resources into existing
- *                        resource files (failing or overwriting duplicate
- *                        resources) or to fail if resource file exists.
- *                      - Now always creates language neutral resources rather
- *                        than user's current language.
- *                      - Added compiler directive to switch off unsafe
- *                        warnings.
- *                      - Updtated help screen and other messages re new -u
- *                        switch and its implementation.
- *                      - Changed to use singleton Params object rather managing
- *                        own TParams object.
- *                      - Moved routines that get version information to own
- *                        unit.
- *
+ * $Rev$
+ * $Date$
  *
  * ***** BEGIN LICENSE BLOCK *****
  *
@@ -54,8 +24,11 @@
  * The Initial Developer of the Original Code is Peter Johnson
  * (http://www.delphidabbler.com/).
  *
- * Portions created by the Initial Developer are Copyright (C) 2004-2008 Peter
+ * Portions created by the Initial Developer are Copyright (C) 2004-2009 Peter
  * Johnson. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   NONE
  *
  * ***** END LICENSE BLOCK *****
 }

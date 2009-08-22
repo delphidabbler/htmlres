@@ -4,14 +4,8 @@
  * Implements class that parses the HTML Resource Compiler's command line, lists
  * errors and exposes information from command line as properties.
  *
- * v1.0 of 26 Jun 2004  - Original version.
- * v1.1 of 28 May 2006  - Added new -r command line switch and code to support
- *                        it.
- *                      - Rewrote commenting.
- * v1.2 of 21 Aug 2008  - Converted to singleton object.
- *                      - Added new -u switch that governs how any existing
- *                        resource file is updated.
- *
+ * $Rev$
+ * $Date$
  *
  * ***** BEGIN LICENSE BLOCK *****
  *
@@ -30,8 +24,11 @@
  * The Initial Developer of the Original Code is Peter Johnson
  * (http://www.delphidabbler.com/).
  *
- * Portions created by the Initial Developer are Copyright (C) 2004-2008 Peter
+ * Portions created by the Initial Developer are Copyright (C) 2004-2009 Peter
  * Johnson. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   NONE
  *
  * ***** END LICENSE BLOCK *****
 }
