@@ -3,11 +3,8 @@
  *
  * Project file for HTML Resource Compiler.
  *
- * v1.0 of 26 Jun 2004  - Original version.
- * v1.1 of 18 Sep 2004  - Removed UResourceFile and UResourceUtils units.
- * v1.2 of 29 May 2006  - Updated commenting.
- * v1.3 of 21 Aug 2008  - Added new UVerInfo unit.
- *
+ * $Rev$
+ * $Date$
  *
  * ***** BEGIN LICENSE BLOCK *****
  *
@@ -26,8 +23,11 @@
  * The Initial Developer of the Original Code is Peter Johnson
  * (http://www.delphidabbler.com/).
  *
- * Portions created by the Initial Developer are Copyright (C) 2004-2008 Peter
+ * Portions created by the Initial Developer are Copyright (C) 2004-2009 Peter
  * Johnson. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   NONE
  *
  * ***** END LICENSE BLOCK *****
 }
