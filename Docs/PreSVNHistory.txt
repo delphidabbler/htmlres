@@ -11,8 +11,8 @@ version control with Subversion.
 There are three sections:
   + Files: Lists all source code and development tools and provides details of
     changes to these files that preceded version control.
-  + Releases: Lists all the releases of BDiff / BPatch and notes which file
-    revisions were included in each release.
+  + Releases: Lists all the releases of HTMLRes and notes which file revisions
+    were included in each release.
   + Compilers: Lists the compilers required to build each release.
 
 ================================================================================
