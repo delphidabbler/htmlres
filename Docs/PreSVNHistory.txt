@@ -8,12 +8,13 @@ This file records known changes to files and releases of HTMLRes from the first
 release (v1.0) until release 1.2 when the project was placed was placed under
 version control with Subversion.
 
-There are three sections:
-  + Files: Lists all source code and development tools and provides details of
+There are two sections:
+
+  1 Files: Lists all source code and development tools and provides details of
     changes to these files that preceded version control.
-  + Releases: Lists all the releases of HTMLRes and notes which file revisions
+
+  2 Releases: Lists all the releases of HTMLRes and notes which file revisions
     were included in each release.
-  + Compilers: Lists the compilers required to build each release.
 
 ================================================================================
 FILES
@@ -141,7 +142,7 @@ v1.2 of 29 May 2006  - Revised help message re new -r command line switch
                      - Deleted reference to MPL in sign on message.
                      - Rewrote commenting.
 v1.3 of 23 Aug 2008  - Revised to be able to insert resources into existing
-                       resource files (failing or overwriting duplicate 
+                       resource files (failing or overwriting duplicate
                        resources) or to fail if resource file exists.
                      - Now always creates language neutral resources rather than
                        user's current language.
@@ -204,13 +205,13 @@ Src\VHTMLRes.vi
 RELEASES
 ================================================================================
 
-This section lists all releases of HTMLRes from the first version (1.0) to 
+This section lists all releases of HTMLRes from the first version (1.0) to
 release 1.2. For each release the following is noted:
 
   + Version and build number.
   + Brief notes of changes to program.
   + List of new and added source files.
-  
+
 The Development tools, .bpg and .cfg files, test files and documentation are not
 included in this information.
 
