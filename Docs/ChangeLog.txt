@@ -1,7 +1,7 @@
 Release 1.2 of 23 Aug 2008
 HTMLRes.exe v1.2 (build 4) of 23 Aug 2008
 + Added facility to insert or update resources in existing output resource files. Options controlled by new -u switch. 
-+ Replaced command line installer to windows installed built with Inno Setup installer.
++ Replaced command line installer with a Windows installer built with Inno Setup.
 + Added new build script that can build program and installer.
 
 Release 1.1 of 29 May 2006
