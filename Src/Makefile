@@ -46,17 +46,9 @@ BIN = ..\Bin
 DELPHIROOT = $(DELPHI7)
 !endif
 
-# Define path to DelphiDabbler library code if specified for Delphi 7
-!ifdef DELPHIDABLIBD7
-DELPHIDABLIB = $(DELPHIDABLIBD7);
-!endif
-
 # Check for required macros
 !ifndef DELPHIROOT
 !error DELPHIROOT or DELPHI7 environment variable required.
-!endif
-!ifndef DELPHIDABLIB 
-!error DELPHIDABLIB or DELPHIDABLIBD7 environment variable required.
 !endif
 !ifndef BIN
 !error BIN macro must be defined in calling script.
@@ -87,7 +79,7 @@ ZIP = Zip.exe
 # locations in the project options .cfg file.
 .dpr.exe:
   @echo +++ Compiling Delphi Project $< +++
-  @$(DCC32) $< -B -U"$(DELPHIDABLIB)"
+  @$(DCC32) $< -B
 
 # Resource files are compiled to the directory specified by BIN macro, which
 # must have been set by the caller.
@@ -106,7 +98,7 @@ everything: config resources pascal setup release
 # Configure source folders
 config:
   @echo Configuring HTMLRes
-  # Create .cfg and .bdsproj files from templates 
+  # Create .cfg and .bdsproj files from templates
   @copy /Y HTMLRes.cfg.tplt HTMLRes.cfg
   @copy /Y HTMLRes.dof.tplt HTMLRes.dof
   # Create build folders
