@@ -45,7 +45,9 @@ uses
   UErrors in 'UErrors.pas',
   UMain in 'UMain.pas',
   UParams in 'UParams.pas',
-  UVerInfo in 'UVerInfo.pas';
+  UVerInfo in 'UVerInfo.pas',
+  PJResFile in 'Vendor\PJResFile.pas',
+  PJVersionInfo in 'Vendor\PJVersionInfo.pas';
 
 begin
   // TMain provides main functionality and swallows any exceptions
