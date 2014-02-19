@@ -26,7 +26,7 @@ consenting to be bound by the agreement. If you do not agree to the
 terms and conditions of this agreement do not install or use any part
 of DelphiDabbler HTML Resource Compiler.
 
-DelphiDabbler HTML Resource Compiler is copyright © 2004-2008 by Peter
+DelphiDabbler HTML Resource Compiler is copyright © 2004-2014 by Peter
 D Johnson, http://www.delphidabbler.com.
 
 3. License Grant.
@@ -93,4 +93,4 @@ you concerning the subject matter hereof, and it may only be modified
 by a written amendment signed by the Author.
 
 Except to the extent applicable law, if any, provides otherwise, this
-Agreement will be governed by the laws of the United Kingdon.
+Agreement will be governed by the laws of England and Wales.
