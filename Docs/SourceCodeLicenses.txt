@@ -21,14 +21,19 @@ Original source files are stored in the Src directory.
 Any original source code file that is governed by a license has a comment to
 that effect in the source.
 
-Many files are licensed under the Mozilla Public License. A full copy of that
-license can be found in MPL.txt.
+Many original source files are licensed under the Mozilla Public License v1.1. A
+full copy of that license can be found in MPL.txt.
+
+The files in the Vendors folder are licensed under the Mozilla Public License
+v2.0 - see http://www.mozilla.org/MPL/2.0/.
 
 All files in the Demo folder are public domain. See DemoReadme.txt in the same
 folder for details.
+
+The .gitignore file is covered by the MIT license, copyright (c) 2014 GitHub,
+Inc.
 
 --------------------------------------------------------------------------------
 $Rev$
 $Date$
 --------------------------------------------------------------------------------
-
