@@ -8,19 +8,28 @@ HTMLRes is a Windows command line program that is used to create resource files
 containing HTML files. Each resource is of type HTML (#23) and is named after
 the source file.
 
+System Requirements
+--------------------------------------------------------------------------------
+
+HTMLRes itself should run on any 32 or 64 bit version of Windows. However the
+install program requires Windows 2000 or later.
+
+Should you need to run HTMLRes on an earlier operating system you will need to
+build it from source.
+
 Installation
 --------------------------------------------------------------------------------
 
-When installing or uninstalling on Windows NT, 2000 or XP you need to ensure
-that you have administrator privileges otherwise the installation can fail. On
-Windows Vista the system will prompt, if necessary, for an administrator
-password. It will also elevate the process.
+When installing or uninstalling you need to ensure that you have administrator
+privileges otherwise the installation can fail. On Windows Vista or later the
+system may prompt, if necessary, for an administrator password. It will also
+elevate the install process.
 
 If you have HTML Resource Compiler 1.1 or earlier you should uninstall it using
-the Add / Remove Programs applet (Programs and Features on Windows Vista) before
-installing this version. Uninstalling v1.1 will leave two files, InstallLib.dll
-and UnInstall.exe behind in the installation folder. You should should delete
-these files (or the containing HTMLRes folder) manually.
+the Programs and Features (a.k.a. Add / Remove Programs) control panel applet
+before installing this version. Uninstalling v1.1 will leave two files,
+InstallLib.dll and UnInstall.exe behind in the installation folder. You should
+should delete these files manually.
 
 The program is distributed in a zip archive which contains two files –
 ReadMe.txt (this file) and HTMLRes-Setup-x.x.x.exe, where x.x.x. is the
@@ -60,45 +69,43 @@ to the installation folder, are:
 Uninstalling
 --------------------------------------------------------------------------------
 
-To uninstall HTMLRes open the Windows Control Panel and start the Add / Remove
-Programs applet (or Programs and Features on Windows Vista). Select
-DelphiDabbler HTML Resource Compiler v1.x.x (where x.x is the minor version
-number) from the list of installed applications and click the Remove (or
-Uninstall) button. The uninstall program will now check if you want to go ahead
-with the uninstallation. Accept this prompt to continue with uninstallation.
+To uninstall HTMLRes open the Windows Control Panel and start the Programs and
+Features (a.k.a. Add / Remove Programs) applet. Select DelphiDabbler HTML
+Resource Compiler v1.x.x (where x.x is the minor version number) from the list
+of installed applications and click the Remove or Uninstall button. The
+uninstall program will now check if you want to go ahead with the
+uninstallation. Accept this prompt to continue with uninstallation.
 
 The uninstaller deletes any registry entries that were created by the installer.
 
 User Guide
 --------------------------------------------------------------------------------
 
-See UserGuide.pdf in the installation's Docs sub folder for information
-on using the program and the demo code.
+See UserGuide.pdf in the installation's Docs sub folder for information on using
+the program and the demo code.
 
 Copyright and Licensing
 --------------------------------------------------------------------------------
 
-The program is copyright (c) 2004-2008, Peter D Johnson (www.delphidabbler.com).
-See License.txt file in the installation's Docs sub folder for licensing
-information.
+The program is copyright (c) 2004-2014, Peter D Johnson (@delphidabbler). See
+License.txt in the installation's Docs sub folder for licensing information.
 
 Source Code
 --------------------------------------------------------------------------------
 
 HTMLRes is open source. Much of the source code is licensed under the Mozilla
-public license and other open source licenses. Demo code is public domain.
+Public License and other open source licenses. Demo code is public domain.
 You can get the source code of the latest release from
 http://www.delphidabbler.com/software/htmlres.
 
-Source code of versions back to v1.2 can also be obtained from
-http://code.assembla.com/htmlres/subversion/nodes. Select the "trunk" branch to
-get the current development tree (which may not be stable). Stable releases are
-listed under the "tags" branch.
+Source code of versions back to v1.2.0 can also be obtained from GitHub. Visit
+https://github.com/delphidabbler/html-res/releases then select the required
+release.
 
-Subversion users can check out the source code from
-http://subversion.assembla.com/svn/htmlres. Append /trunk to get the development
-tree or /tags/version-x.x.x, where x.x.x is the version number to get the
-specified version, for example v1.2 is at /tags/version-1.2.0.
+Git users can check out the source code from
+https://github.com/delphidabbler/html-res. Choose the required branch, or for
+the source code of stable releases, choose a tag in the form vX.X.X where X.X.X
+is the release version number.
 
 Source code licensing information is provided in the file SourceCodeLicenses.txt
 that will either be in the root or the Docs sub folder of the source code tree,
