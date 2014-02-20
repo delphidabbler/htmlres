@@ -4,9 +4,6 @@
  * Implements class that parses the HTML Resource Compiler's command line, lists
  * errors and exposes information from command line as properties.
  *
- * $Rev$
- * $Date$
- *
  * ***** BEGIN LICENSE BLOCK *****
  *
  * Version: MPL 1.1

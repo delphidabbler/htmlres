@@ -112,6 +112,3 @@ that will either be in the root or the Docs sub folder of the source code tree,
 depending on which version you get.
 
 --------------------------------------------------------------------------------
-$Rev$
-$Date$
---------------------------------------------------------------------------------

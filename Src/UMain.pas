@@ -4,9 +4,6 @@
  * Implements a class that handles the HTML Resource Compiler's main program
  * processing.
  *
- * $Rev$
- * $Date$
- *
  * ***** BEGIN LICENSE BLOCK *****
  *
  * Version: MPL 1.1

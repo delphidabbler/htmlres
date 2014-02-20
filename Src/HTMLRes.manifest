@@ -6,9 +6,6 @@
  * Manifest file for HTML Resource Compiler. Specifies execution level for
  * Vista that permits application to run without elevation on Vista.
  *
- * $Rev$
- * $Date$
- *
  * ***** BEGIN LICENSE BLOCK *****
  *
  * Version: MPL 1.1

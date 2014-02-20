@@ -4,9 +4,6 @@
  * Provides routines that can return information from the program's version
  * information.
  *
- * $Rev$
- * $Date$
- *
  * ***** BEGIN LICENSE BLOCK *****
  *
  * Version: MPL 1.1

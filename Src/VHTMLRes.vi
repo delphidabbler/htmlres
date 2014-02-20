@@ -4,9 +4,6 @@
 ; Version information description file used to create VHTMLRes.res resource
 ; file.
 ;
-; $Rev$
-; $Date$
-;
 ; Usage:
 ;   1) Generate a .rc resource source file from this file using DelphiDabbler
 ;      Version Information Editor (http://www.delphidabbler.com/vied).

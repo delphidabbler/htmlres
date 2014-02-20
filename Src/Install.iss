@@ -3,9 +3,6 @@
 ;
 ; HTML Resource Compiler install file generation script for use with Inno Setup.
 ;
-; $Rev$
-; $Date$
-;
 ; ***** BEGIN LICENSE BLOCK *****
 ;
 ; Version: MPL 1.1

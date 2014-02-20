@@ -4,9 +4,6 @@
  * Implements a custom exception class that incorporates an error code number
  * that HTMLRes uses as its exit code. Defines error code constants.
  *
- * $Rev$
- * $Date$
- *
  * ***** BEGIN LICENSE BLOCK *****
  *
  * Version: MPL 1.1

@@ -3,9 +3,6 @@
  *
  * Project file for HTML Resource Compiler.
  *
- * $Rev$
- * $Date$
- *
  * ***** BEGIN LICENSE BLOCK *****
  *
  * Version: MPL 1.1

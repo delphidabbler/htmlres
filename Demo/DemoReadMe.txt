@@ -14,7 +14,4 @@ The author makes no warranty of any kind as to the suitability of the code for
 any purpose and accepts no liability for any damages caused in using the code.
 
 --------------------------------------------------------------------------------
-$Rev$
-$Date$
---------------------------------------------------------------------------------
 
