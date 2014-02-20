@@ -5,22 +5,18 @@ Release 1.2.1 of 20 February 2014
 + Minor correction to EULA.
 + Updated documentation.
 
-Release 1.2 of 23 August 2008
-HTMLRes.exe v1.2 (build 4) of 23 Aug 2008
+Release v1.2.0 of 23 August 2008
 + Added new -u command that enables resources to be inserted and updated in pre-existing resource files.
 + Replaced command line installer with a Windows GUI installer built with Inno Setup.
 
-Release 1.1 of 29 May 2006
-HTMLRes.exe v1.1 (build 3) of 28 May 2006
+Release v1.1.0 of 29 May 2006
 + Added new -r command that enables file names to be relative to directory containing manifest instead of program execution directory.
 + Changed message displayed when program starts.
 + Changed to new open source EULA for executable code (source still available under MPL).
 
-Release 1.0.1 of 18 September 2004
-HTMLRes.exe v1.0.1 (build 2) of 18 September 2004
+Release v1.0.1 of 18 September 2004
 + Rebuilt using PJResFile resource file library unit rather than custom resource file handling code.
 + Updated documentation, including new PAD file.
 
-Release 1.0 of 26 June 2004
-HTMLRes.exe v1.0.0 (build 1) of 26 June 2004
+Release v1.0.0 of 26 June 2004
 + Original version including demo code and documentation, licensed under Mozilla Public License v1.1.
