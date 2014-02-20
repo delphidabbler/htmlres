@@ -161,16 +161,16 @@ resourcestring
           + EOL
           + '       immediately followed by :xxx where xxx is one of:'
           + EOL
-          + '       ù fail - halt program if output file exists'
+          + '       * fail - halt program if output file exists'
           + EOL
-          + '       ù overwritefile - overwrite entire file (default)'
+          + '       * overwritefile - overwrite entire file (default)'
           + EOL
-          + '       ù insertres - insert resources into existing file'
+          + '       * insertres - insert resources into existing file'
           + ' (error if'
           + EOL
           + '         duplicate resources)'
           + EOL
-          + '       ù overwriteres - insert resources into existing file'
+          + '       * overwriteres - insert resources into existing file'
           + ' (duplicate'
           + EOL
           + '         resources are overwritten)'
