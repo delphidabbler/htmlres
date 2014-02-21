@@ -99,11 +99,11 @@ You can get the source code of the latest release from
 http://www.delphidabbler.com/software/htmlres.
 
 Source code of versions back to v1.2.0 can also be obtained from GitHub. Visit
-https://github.com/delphidabbler/html-res/releases then select the required
+https://github.com/delphidabbler/htmlres/releases then select the required
 release.
 
 Git users can check out the source code from
-https://github.com/delphidabbler/html-res. Choose the required branch, or for
+https://github.com/delphidabbler/htmlres. Choose the required branch, or for
 the source code of stable releases, choose a tag in the form vX.X.X where X.X.X
 is the release version number.
 
