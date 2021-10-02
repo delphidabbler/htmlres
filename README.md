@@ -44,7 +44,7 @@ In the unlikely event you need to run HTMLRes on an operating system earlier tha
 Documentation
 -------------
 
-User guide: `Docs/UserGuide.odt` or `Docs/UserGuide.pdf`.
+User guide: `Docs/UserGuide.md`.
 
 Installation notes etc.: `Docs/ReadMe.txt`.
 

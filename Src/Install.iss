@@ -50,7 +50,7 @@
 #define LicenseFile "License.rtf"
 #define LicenseTextFile "License.txt"
 #define ChangeLogFile "ChangeLog.txt"
-#define UserGuide "UserGuide.pdf"
+#define UserGuide "UserGuide.md"
 #define InstDocsDir "Docs"
 #define InstUninstDir "Uninstall"
 #define InstDemoDir "Demo"

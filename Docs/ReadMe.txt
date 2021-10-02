@@ -31,7 +31,7 @@ before installing this version. Uninstalling v1.1 will leave two files,
 InstallLib.dll and UnInstall.exe behind in the installation folder. You should
 should delete these files manually.
 
-The program is distributed in a zip archive which contains two files –
+The program is distributed in a zip archive which contains two files ï¿½
 ReadMe.txt (this file) and HTMLRes-Setup-x.x.x.exe, where x.x.x. is the
 program's version number. Extract both files from the archive.
 
@@ -46,25 +46,25 @@ The installer installs the main program along with documentation and some
 demonstration code that illustrates how to use the compiler. The files, relative
 to the installation folder, are:
 
-  HTMLRes.exe – the HTML resource compiler.
+  HTMLRes.exe ï¿½ the HTML resource compiler.
 
-  Demo\ sub folder – contains the following demo files:
-    arrow.gif – GIF file displayed on index.html.
-    Demo.hmfst – manifest file listing all demo files to be compiled by HTMLRes.
-    DemoReadMe.txt – ReadMe file for demo code. Please read before using the
+  Demo\ sub folder ï¿½ contains the following demo files:
+    arrow.gif ï¿½ GIF file displayed on index.html.
+    Demo.hmfst ï¿½ manifest file listing all demo files to be compiled by HTMLRes.
+    DemoReadMe.txt ï¿½ ReadMe file for demo code. Please read before using the
       demo code.
-    HTMLLib.dpr – Delphi project file for a resource only DLL.
-    index.html – main demo HTML page.
-    page2.html – secindary demo HTML page.
-    style.css – demo style sheet used by HTML pages.
+    HTMLLib.dpr ï¿½ Delphi project file for a resource only DLL.
+    index.html ï¿½ main demo HTML page.
+    page2.html ï¿½ secindary demo HTML page.
+    style.css ï¿½ demo style sheet used by HTML pages.
 
-  Docs\ sub folder – contains program documentation:
-    ChangeLog.txt – the program's update history.
-    License.txt – the program's license.
-    ReadMe.txt – contains important install and other information.
-    UserGuide.pdf – a guide to using the program and the demo code.
+  Docs\ sub folder ï¿½ contains program documentation:
+    ChangeLog.txt ï¿½ the program's update history.
+    License.txt ï¿½ the program's license.
+    ReadMe.txt ï¿½ contains important install and other information.
+    UserGuide.md ï¿½ a guide to using the program and the demo code.
 
-  Uninstall sub folder – contains files required by the uninstaller.
+  Uninstall sub folder ï¿½ contains files required by the uninstaller.
 
 Uninstalling
 --------------------------------------------------------------------------------
@@ -81,7 +81,7 @@ The uninstaller deletes any registry entries that were created by the installer.
 User Guide
 --------------------------------------------------------------------------------
 
-See UserGuide.pdf in the installation's Docs sub folder for information on using
+See UserGuide.md in the installation's Docs sub folder for information on using
 the program and the demo code.
 
 Copyright and Licensing

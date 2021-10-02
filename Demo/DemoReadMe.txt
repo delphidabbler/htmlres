@@ -1,9 +1,9 @@
 DELPHIDABBLER HTML RESOURCE COMPILER DEMO README
 ================================================================================
 
-For information about how to use the demo code see UserGuide.pdf installed with
+For information about how to use the demo code see UserGuide.md installed with
 HTML Resource Compiler in the Docs sub-directory. Alternatively see
-http://www.delphidabbler.com/subsid/sw-pdf/htmlres/userguide.pdf
+https://github.com/delphidabbler/htmlres/blob/master/Docs/UserGuide.md
 
 All the files in the HTML Resource Compiler's Demo folder (and only the Demo
 folder) have any copyright dedicated to the Public Domain. See
