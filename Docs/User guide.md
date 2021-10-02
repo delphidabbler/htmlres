@@ -83,8 +83,6 @@ Not all features are available in all versions of _HTMLRes_. Specifically:
 
 An example Delphi project is supplied with the program. The demo files are installed in the `Demo` sub-folder of the main program installation folder.
 
-> **Warning:** The example project assumes an ANSI Delphi compiler. If compiling with a Unicode compiler, you may need to explicitly declare any characters or strings as ANSI types.
-
 The demo project simply creates a resource only DLL that stores some HTML, CSS and GIF files that can be displayed in Internet Explorer. 
 
 The demo files are: 
