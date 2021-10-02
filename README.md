@@ -9,7 +9,7 @@ HTML Resource Compiler is a simple Windows command line application for creating
 
 > For details on how to use the protocol see the article [How to create and use HTML resource files](http://delphidabbler.com/articles?article=10).
 
-HTMLRes takes a list of HTML and related support files and copies the content of each file into a separate HTML resource within a binary resource file. Each resource has the same name as the source file. This makes porting standard HTML files to embedded resources very easy – and it is something that the Embarcadero (née Borland) BRCC32 resource compiler won't allow!
+HTMLRes takes a list of HTML and related support files and copies the content of each file into a separate HTML resource within a binary resource file. Each resource has the same name as the source file. This makes porting standard HTML files to embedded resources very easy â€“ and it is something that the Embarcadero (nÃ©e Borland) BRCC32 resource compiler won't allow!
 
 HTMLRes is particularly useful for embedding HTML files in the executable file of programs that display information using the Microsoft web browser control. Including HTML files in the program's resources means that is is not necessary to distribute the HTML files separately.
 
@@ -58,6 +58,18 @@ License
 Original source: Mozilla Public License 1.1. Third party source: Mozilla Public License 2.0 and MIT license. See `Docs/SourceCodeLicenses.txt` for details.
 
 The executable code has its own custom permissive license. See `Docs/License.txt` for full information.
+
+
+A Little History
+----------------
+
+Up to and including the release of v1.2.0, HTMLRes was not under version control. Known changes up until then are logged in the file `PreSVNHistory.txt` in the `Docs` sub-directory.
+
+On 1st August 2009 the v1.2.0 development tree was moved into a Subversion repository. Some development work took place in that repo, but no releases were made from it.
+
+Finally, the Subversion repo was converted to Git on 18th February 2014 and the repo was made public on GitHub.
+
+Release 1.2.1 was the first release from the Git repo on 20th February 2014.
 
 
 To Do
