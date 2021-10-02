@@ -1,5 +1,15 @@
 # DelphiDabbler HTML Resource Compiler User Guide
 
+## Introduction
+
+_HTMLRes_ is a Windows command line program that is used to create resource files containing the contents of HTML, CSS, image etc. files as resources.
+
+Each file is stored as a separate resource. Each resources is of type `HTML` (`#23`) and is named after the source file.
+
+## Scope
+
+This document relates to _HTMLRes_ v2.1.x.
+
 ## Command Line
 
 The command line syntax of the application is:
