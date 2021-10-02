@@ -18,7 +18,7 @@ The command line syntax of the application is:
 
 where:
 
-`<in-file-list>` is a sequence of zero or more file names. These files will be stored in the resource file. Relative file names are relative to the folder from where _HTMLRes_ was started. From v1.1 the `-r` option may be used to change this behaviour (see below).
+`<in-file-list>` is a sequence of zero or more file names. These files will be stored in the resource file. Relative file names are relative to the folder from where _HTMLRes_ was started. The `-r` option may be used to change this behaviour (see below).
 
 `<manifest-file>` is the name of a file that contains a list of files to be stored in the resource file. Each file name is placed on a separate line in the manifest file. Blank lines are ignored. Lines beginning with `#` are treated as comments and are also ignored. Comments cannot be placed on the same line as a file name. Here's an example manifest file: 
 
@@ -28,9 +28,9 @@ where:
     arrow.gif
     style.css
 
-Spaces are not allowed between the `-m` command and the manifest file name. The file names specified in the manifest are, by default, relative to the folder from where _HTMLRes_ was executed. From v1.1 you can change this so that the file names are relative to the manifest file's folder by using the `-r` option (see below).
+Spaces are not allowed between the `-m` command and the manifest file name. The file names specified in the manifest are, by default, relative to the folder from where _HTMLRes_ was executed. The `-r` option can be used to change this behaviour so that filenames are relative to the manifest file folder instead (see below).
 
-`<out-file>` is the name of the generated resource file. Spaces are not allowed between the `-o` command and the output file name. This command is optional. If no output file name is specified then the default name `out.res` is used. From v1.2 the `-u` option controls how pre-existing output files are handled (see below).
+`<out-file>` is the name of the generated resource file. Spaces are not allowed between the `-o` command and the output file name. This command is optional. If no output file name is specified then the default name `out.res` is used. The `-u` option controls how pre-existing output files are handled (see below).
 
 `options` is a sequence of zero or more of space separated options from the following list: 
 
@@ -80,14 +80,6 @@ If you are intending to use the `res://` protocol to access the HTML resources f
 * `42.html`
 * `%3.css`
 * `4-a.jpg`
-
-## Compatibility
-
-Not all features are available in all versions of _HTMLRes_. Specifically:
-
-* The `-r` option is available in v1.1 and later.
-
-* The `-u` option is available in v1.2 and later.
 
 ## Example
 
