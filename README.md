@@ -24,16 +24,21 @@ See `Build.html` in the repo root for information about how to build the program
 Each release from v1.2.0 is has a tag in the form vX.X.X where X.X.X is the release version number.
 
 
-System Requirements
--------------------
+Releases
+--------
 
-HTMLRes itself should be able to be used on just about any Windows system from Windows 95 onwards. However the installer requires Windows 2000 and later.
+Each release of HTMLRes from v1.2.1 is available from the program's GitHub repository's [Releases section](https://github.com/delphidabbler/htmlres/releases).
 
+The program is distributed in a zip archive which contains two files:
 
-Executable Code
----------------
+1. `ReadMe.txt` - contains an explanation about how to install the program
+2. `HTMLRes-Setup-x.x.x.exe`, where `x.x.x` is the program's version number, is the program's Windows installer.
 
-You can get a zip archive containing HTMLRes's installer and read-me file from http://delphidabbler.com/download?id=htmlres&type=exe. At present only the latest version is available.
+### System Requirements
+
+HTMLRes itself should be able to run on just about any 32 or 64 bit version of Windows from Windows 95 onwards. However the installer requires Windows 2000 and later.
+
+In the unlikely event you need to run HTMLRes on an operating system earlier than Windows 2000 you will need to build it from source (see above).
 
 
 Documentation
