@@ -1,96 +1,46 @@
-DELPHIDABBLER HTML RESOURCE COMPILER END-USER SOFTWARE LICENSE
-AGREEMENT
+# License
 
-1. Definitions
+_HTML Resource Compiler_ is copyright © 2004-2021 by [Peter D Johnson][1].
 
-In this document the following definitions apply:
+## Executable Program
 
-   a. "Product" means DelphiDabbler HTML Resource Compiler and related
-      documentation.
-   b. "Author" means the author and copyright holder of of the
-      software, that is Peter D Johnson, http://www.delphidabbler.com.
+The executable program, `HTMLRes.exe`, is made available under the terms of the [Mozilla Public License v2.0][2].
 
-2. Introduction
+## Source Code
 
-A source code version of some of DelphiDabbler HTML Resource
-Compiler's functionality that you may use, modify and distribute is
-available to you free of charge from http://www.delphidabbler.com
-under the Mozilla Public License v2.0 and other open source software
-licenses. The Mozilla Public License v2.0 can be found at
-https://www.mozilla.org/MPL/2.0/.
+Source code is available from the [`delphidabbler/htmlres`][3] repository on GitHub.
 
-The accompanying executable code version of the Product is made
-available to you under the terms of this end user license agreement.
-By installing or using DelphiDabbler HTML Resource Compiler you are
-consenting to be bound by the agreement. If you do not agree to the
-terms and conditions of this agreement do not install or use any part
-of DelphiDabbler HTML Resource Compiler.
+Most of the source code is licensed under the [Mozilla Public License v2.0][2]. Many files carry license information and a copyright statement. Those that do not have such information are copyright © 2021 by [Peter D Johnson][1].
 
-DelphiDabbler HTML Resource Compiler is copyright � 2004-2014 by Peter
-D Johnson, http://www.delphidabbler.com.
+The full text of the Mozilla Public License can found in [`MPL-2.0.txt`][4].
 
-3. License Grant.
+Exceptions are:
 
-The Author grants you a non-exclusive license to use the executable
-code version of DelphiDabbler HTML Resource Compiler. You may install
-as many copies of the program as you wish and may distribute the
-program providing this license agreement any other copyright or legal
-notices are distributed with the Product.
+* All files in the repository's `Demo` folder are public domain [CC0 1.0][5]. See `DemoReadme.txt` in the same folder for details.
+* `.gitignore` is covered by the [MIT license][6], copyright © 2014 GitHub, Inc.
 
-This agreement will also govern any software upgrades provided by the
-Author that replace and/or supplement the original Product, unless
-such upgrades are accompanied by a separate license, in which case the
-terms of that license will govern.
+## Documentation
 
-4. Termination.
+All documentation, with the exception of this file (`LICENSE.md`) and `Docs/License.rtf` is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License [(CC BY-SA 4.0)][7], copyright © 2021 by [Peter D Johnson][1].
 
-If you breach this Agreement your right to use the Product will
-terminate immediately and without notice, but all provisions of this
-agreement except the License Grant (Section 3) will survive
-termination and continue in effect. Upon termination, you must destroy
-all copies of the Product.
+Sufficient attribution will be to note the copyright date, the name of the copyright holder and to provide a link to the GitHub repository at [https://github.com/delphidabbler/htmlres][3].
 
-5. Proprietary Rights.
+Documentation files are files in the repository that have `.md`, `.txt`, `.rtf` or `.html` extensions.
 
-Portions of the Product are available in source code form under the
-terms of the Mozilla Public License v2.0 and other open source licenses
-from http://www.delphidabbler.com. Nothing in this agreement will be
-construed to limit any rights granted under the Open Source Licenses.
-Subject to the foregoing, the Author, for himself and on behalf of his
-licensors, hereby reserves all intellectual property rights in the
-Product, except for the rights expressly granted in this agreement.
-You may not remove or alter any copyright or other proprietary notice
-in or on the Product.
+This file and `Docs/License.rtf` must not be modified and must be redistributed as-is unless explicit permission of the copyright holder is given.
 
-6. Disclaimer Of Warranty.
+## Disclaimer & Limitation Of Liability
 
-THE PRODUCT IS PROVIDED "AS IS" WITH ALL FAULTS. TO THE EXTENT
-PERMITTED BY LAW, THE AUTHOR HEREBY DISCLAIMS ALL WARRANTIES, WHETHER
-EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES THAT THE
-PRODUCT IS FREE OF DEFECTS, MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE
-AND NON-INFRINGING. YOU BEAR ENTIRE RISK AS TO SELECTING THE PRODUCT
-FOR YOUR PURPOSES AND AS TO THE QUALITY AND PERFORMANCE OF THE
-PRODUCT. THIS LIMITATION WILL APPLY NOTWITHSTANDING THE FAILURE OF
-ESSENTIAL PURPOSE OF ANY REMEDY. SHOULD THE PRODUCT PROVE DEFECTIVE,
-YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+The Disclaimer Of Warranty and Limitations Of Liability sections of the [Mozilla Public License v2.0][2] apply to this whole project.
 
-7. Limitation Of Liability.
+## Governing Law
 
-EXCEPT AS REQUIRED BY LAW, THE AUTHOR AND HIS LICENSORS, CONTRIBUTORS
-AND DISTRIBUTORS WILL NOT BE LIABLE FOR ANY GENERAL, INDIRECT,
-SPECIAL, INCIDENTAL, CONSEQUENTIAL OR EXEMPLARY DAMAGES ARISING OUT OF
-OR IN ANY WAY RELATING TO THIS AGREEMENT OR THE USE OF OR INABILITY TO
-USE THE PRODUCT, INCLUDING WITHOUT LIMITATION DAMAGES FOR LOSS OF
-GOODWILL, WORK STOPPAGE, LOST PROFITS, LOSS OF DATA, AND COMPUTER
-FAILURE OR MALFUNCTION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
-DAMAGES AND REGARDLESS OF THE THEORY (CONTRACT, TORT OR OTHERWISE)
-UPON WHICH SUCH CLAIM IS BASED.
+The law of England and Wales applies to all licenses & disclaimers unless they specifically state otherwise. Where Welsh Law varies from English Law then Welsh Law takes precedence.
 
-8. Miscellaneous.
-
-This Agreement constitutes the entire agreement between the Author and
-you concerning the subject matter hereof, and it may only be modified
-by a written amendment signed by the Author.
-
-Except to the extent applicable law, if any, provides otherwise, this
-Agreement will be governed by the laws of England and Wales.
+[1]: https://gravatar.com/delphidabbler
+[2]: https://mozilla.org/MPL/2.0/
+[3]: https://github.com/delphidabbler/htmlres
+[4]: https://github.com/delphidabbler/htmlres/blob/master/Docs/MPL-2.0.txt
+[5]: http://creativecommons.org/publicdomain/zero/1.0/
+[6]: https://opensource.org/licenses/MIT
+[7]: http://creativecommons.org/licenses/by-sa/4.0/
