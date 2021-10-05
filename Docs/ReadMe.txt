@@ -107,8 +107,7 @@ https://github.com/delphidabbler/htmlres. Choose the required branch, or for
 the source code of stable releases, choose a tag in the form vX.X.X where X.X.X
 is the release version number.
 
-Source code licensing information is provided in the file SourceCodeLicenses.txt
-that will either be in the root or the Docs sub folder of the source code tree,
-depending on which version you get.
+Source code licensing information is provided in the file LICENSE.md that will
+be in the root of the source code tree.
 
 --------------------------------------------------------------------------------
