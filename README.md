@@ -60,7 +60,9 @@ An bug reports and feature requests via the GitHub issue tracker please.
 License
 -------
 
-Original source: Mozilla Public License 1.1. Third party source: Mozilla Public License 2.0 and MIT license. See `Docs/SourceCodeLicenses.txt` for details.
+Original source: Mozilla Public License 2.0.
+
+Third party source: Mozilla Public License 2.0 and MIT license. See `Docs/SourceCodeLicenses.txt` for details.
 
 The executable code has its own custom permissive license. See `Docs/License.txt` for full information.
 

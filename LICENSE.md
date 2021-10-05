@@ -15,9 +15,9 @@ In this document the following definitions apply:
 A source code version of some of DelphiDabbler HTML Resource
 Compiler's functionality that you may use, modify and distribute is
 available to you free of charge from http://www.delphidabbler.com
-under the Mozilla Public License and other open source software
-licenses. The Mozilla Public License can be found at
-http://www.mozilla.org/MPL/.
+under the Mozilla Public License v2.0 and other open source software
+licenses. The Mozilla Public License v2.0 can be found at
+https://www.mozilla.org/MPL/2.0/.
 
 The accompanying executable code version of the Product is made
 available to you under the terms of this end user license agreement.
@@ -53,7 +53,7 @@ all copies of the Product.
 5. Proprietary Rights.
 
 Portions of the Product are available in source code form under the
-terms of the Mozilla Public License and other open source licenses
+terms of the Mozilla Public License v2.0 and other open source licenses
 from http://www.delphidabbler.com. Nothing in this agreement will be
 construed to limit any rights granted under the Open Source Licenses.
 Subject to the foregoing, the Author, for himself and on behalf of his
