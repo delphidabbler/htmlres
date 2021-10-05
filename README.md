@@ -80,4 +80,3 @@ To Do
 
 * Get a Unicode compatible version to work.
 
-* Update source license to MPL 2.0 and simplify the EULA.
