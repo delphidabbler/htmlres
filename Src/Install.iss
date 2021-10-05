@@ -49,7 +49,7 @@
 #define ReadmeFile "ReadMe.txt"
 #define LicenseFile "License.rtf"
 #define LicenseTextFile "License.txt"
-#define ChangeLogFile "ChangeLog.txt"
+#define ChangeLogFile "CHANGELOG.md"
 #define UserGuide "UserGuide.md"
 #define InstDocsDir "Docs"
 #define InstUninstDir "Uninstall"
@@ -117,7 +117,7 @@ Source: {#SrcExePath}{#ExeFile}; DestDir: {app}; Flags: uninsrestartdelete
 ; Documentation
 Source: {#SrcDocsPath}{#LicenseTextFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
 Source: {#SrcDocsPath}{#ReadmeFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
-Source: {#SrcDocsPath}{#ChangeLogFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
+Source: {#SourcePath}{#ChangeLogFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
 Source: {#SrcDocsPath}{#UserGuide}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
 ; Demo
 Source: {#SrcDemoPath}*.*; DestDir: {app}\{#InstDemoDir}; Flags: ignoreversion

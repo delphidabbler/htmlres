@@ -59,7 +59,7 @@ to the installation folder, are:
     style.css � demo style sheet used by HTML pages.
 
   Docs\ sub folder � contains program documentation:
-    ChangeLog.txt � the program's update history.
+    CHANGELOG.md � the program's update history.
     License.txt � the program's license.
     ReadMe.txt � contains important install and other information.
     UserGuide.md � a guide to using the program and the demo code.

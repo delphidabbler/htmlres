@@ -48,7 +48,7 @@ User guide: `Docs/UserGuide.md`.
 
 Installation notes etc.: `Docs/ReadMe.txt`.
 
-Change log: `Docs/ChangeLog.txt`.
+Change log: `CHANGELOG.md`.
 
 
 Bugs and Feature Requests
