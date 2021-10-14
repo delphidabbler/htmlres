@@ -8,7 +8,7 @@ Each file is stored as a separate resource. Each resources is of type `HTML` (`#
 
 ## Scope
 
-This document relates to _HTMLRes_ v2.1.x.
+This document relates to _HTMLRes_ v1.2.x.
 
 ## Command Line
 
