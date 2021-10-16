@@ -75,17 +75,15 @@
 </h2>
 
 <p>
-  <em>HTMLRes</em> is written in Object Pascal and is targeted at Delphi
-  7. The Delphi IDE can be used to modify the source and to perform test
-  builds. Final builds should be built using the provided makefile, but you
+  <em>HTMLRes</em> is written in Object Pascal and is targeted at Delphi XE and
+  later. The Delphi IDE can be used to modify the source and to perform test
+  builds. Final builds should be built using the provided Makefile, but you
   can get away with using the IDE if you don't change any resources.
 </p>
 
 <p>
   These notes apply only to source code of releases <strong>after</strong>
-  <em>HTMLRes</em> v1.2.0. For any earlier version please see the file named
-  <code>ReadMe-Src.txt</code> that will be in either the root directory or the
-  <code>Docs</code> sub-directory.
+  <em>HTMLRes</em> v1.2.0.
 </p>
 
 <h2>
@@ -114,17 +112,11 @@
 </h3>
 
 <p>
-  A copy of Delphi is required to build the object Pascal code. Delphi 7
-  is preferred. Delphi 2005 to  2008 should be able to compile the source.
-  Delphi 2009 and later may work, but the code hasn't been written with Delphi
-  2009's Unicode support in mind, so there may be problems. Delphis earlier
-  than version 7 are likely to fail to compile HTML, but this hasn't been
-  tested.
+  A copy of Delphi XE or later is required to build the object Pascal code.
 </p>
 
 <p>
-  You can use the Delphi IDE to edit the code and test compile it. The
-  makefile requires the following command line tools:
+  The Makefile requires the following command line tools:
 </p>
 
 <dl>
@@ -144,26 +136,17 @@
 </dl>
 
 <p>
-  The following environment variables are associated with these tools:
+  The following environment variable is associated with these tools and must be defined before you run Make:
 </p>
 
 <dl>
   <dt class="spaced">
-    <code>DELPHIROOT</code> - required unless <code>DELPH7</code> is set.
+    <code>DELPHIROOT</code>
   </dt>
   <dd>
-    Should be set to the install directory of the version of Delphi being
-    used. <code>DCC32</code> and <code>BRCC32</code> are expected to be in
-    the <code>Bin</code> sub-directory of <code>DELPHIROOT</code>.
-  </dd>
-  <dt class="spaced">
-    <code>DELPHI7</code> - optional
-  </dt>
-  <dd>
-    If you are using Delphi 7 this environment variable should be set
-    to the Delphi install directory. When specified <code>DELPHIROOT</code>
-    will ignore its own value and use the value of <code>DELPHI7</code>
-    instead.
+    Set to the install directory of the version of Delphi being used.
+    <code>DCC32</code> and <code>BRCC32</code> are expected to be in the
+    <code>Bin</code> sub-directory of <code>DELPHIROOT</code>.
   </dd>
 </dl>
 
@@ -174,13 +157,6 @@
 <p>
   This is the make tool that ships with Delphi. You can use any version that
   works.
-</p>
-
-<p>
-  <strong>Note:</strong> The version of MAKE included with Delphi 7 will crash
-  with an obscure error message if the <code>PATH</code> environment variable
-  contains too many paths. If this is the case then you need to either pare down
-  the <code>PATH</code> or use a later version of MAKE.
 </p>
 
 <h3>
@@ -206,9 +182,9 @@
 </h3>
 
 <p>
-  The Inno setup command line compiler is used to create <em>HTMLRes</em>'
-  install program. Inno Setup v5.5.2 ANSI or later with built in ISPP
-  pre-processor is required. You can get Inno Setup at <a
+  The Unicode version of Inno Setup v5 (not v6 or later) must be used to
+  create <em>HTMLRes</em>' install program. v5.6.1(u) or later (with built in
+  ISPP pre-processor) is required. You can get Inno Setup at <a
     href="http://www.innosetup.com/"
   >http://www.innosetup.com/</a>.
 </p>
@@ -244,13 +220,13 @@
 </h3>
 
 <p>
-  The first step is to configure the required <code>DELPHIROOT</code> or
-  <code>DELPHI7ROOT</code> environment variables.
+  The first step is to configure the required <code>DELPHIROOT</code>
+  environment variable.
 </p>
 
 <p>
-  Set any of the optional environment variables that are needed to specify the
-  path to any tools that are not on the system path.
+  Next set any of the optional environment variables that are needed to specify
+  the path to any tools that are not on the system path.
 </p>
 
 <p>
@@ -264,12 +240,11 @@
 </h3>
 
 <p>
-  If you don't already have it, download the <em>HTMLRes</em> source code.
-  How to go about that is explained at
-  <a
-    href="http://www.delphidabbler.com/software/htmlres/download"
-  >http://www.delphidabbler.com/software/htmlres/download</a>. If necessary,
-  extract the source code into a folder, preserving the directory structure.
+  If you don't already have it, download the <em>HTMLRes</em> source code from
+  the <code><a
+    href="https://github.com/delphidabbler/htmlres"
+  >delphidabbler/htmlres</a></code> GitHub repository. You can either clone it
+  using Git or download a zip file containing the source.
 </p>
 
 <h3>
@@ -277,8 +252,8 @@
 </h3>
 
 <p>
-  After checking out or downloading and extracting the source code you should
-  have the following directory structure:
+  After obtaining the source code you should have the following directory
+  structure:
 </p>
 
 <pre>./
@@ -292,17 +267,16 @@
       +-- Vendor            - imported 3rd party source code</pre>
 
 <p>
-  If, by chance you also have a <code>Bin</code>, <code>Exe</code> and
-  <code>Release</code> directory don't worry - all will become clear. Git users
-  will also see the usual <code>.git</code> hidden directory. If you have done #
-  some editing you may also see occasional hidden <code>__history</code>
-  folders, depending on which version of Delphi you are using.
+  Git users will also see the usual <code>.git</code> hidden directory. If you
+  have done some editing you may also see occasional hidden
+  <code>__history</code> folders, depending on which version of Delphi you are
+  using.
 </p>
 
 <p>
-  Before you can get hacking, you need to prepare the code tree. Open a
-  command console and navigate into the <code>Src</code> sub-folder. Run any
-  script you have created to set the required environment variables then do:
+  Before you can get hacking, you need to prepare the source tree. Open a
+  command console and navigate into the <code>Src</code> sub-folder. Make sure
+  you have set the required environment variables then do:
 </p>
 
 <pre class="cmd"><span class="prompt">&gt;</span> Make config</pre>
@@ -314,16 +288,6 @@
 </p>
 
 <pre class="cmd"><span class="prompt">&gt;</span> %DELPHIROOT%\Bin\Make config</pre>
-
-<p>
-  or
-</p>
-
-<pre class="cmd"><span class="prompt">&gt;</span> %DELPHI7%\Bin\Make config</pre>
-
-<p>
-  depending on which environment variable you have set.
-</p>
 
 <p>
   Once <code>Make config</code> has completed your folder structure should
@@ -345,10 +309,10 @@
 <p>
   If the <code>Bin</code>, <code>Exe</code> and <code>Release</code> folders
   already existed they will have been emptied. In addition, <code>Make</code>
-  will have created <code>.cfg</code> and <code>.dof</code> files from
-  templates in the <code>Src</code> folder. <code>.cfg</code> files are needed
-  for DCC32 to run correctly and <code>.dof</code> files enable the use of the
-  Delphi IDE. These files will be ignored by Git.
+  will have created a <code>.cfg</code> file from the <code>.cfg.tplt</code>
+  template file in the <code>Src</code> folder. <code>.cfg</code> files are
+  needed for DCC32 to run correctly. The <code>.cfg</code> file will be ignored
+  by Git.
 </p>
 
 <p>
