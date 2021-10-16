@@ -2,6 +2,11 @@ HTML Resource Compiler (htmlres)
 ================================
 
 
+Scope
+-----
+
+This document relates to _HTMLRes_ v1.3.x.
+
 Description
 -----------
 
