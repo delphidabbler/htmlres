@@ -1,7 +1,7 @@
 ; ------------------------------------------------------------------------------
 ; This Source Code Form is subject to the terms of the Mozilla Public License,
 ; v. 2.0. If a copy of the MPL was not distributed with this file, You can
-; obtain one at http://mozilla.org/MPL/2.0/
+; obtain one at https://mozilla.org/MPL/2.0/
 ;
 ; Copyright (C) 2008-2021, Peter Johnson (gravatar.com/delphidabbler).
 ;
@@ -27,13 +27,14 @@
 #define ExeFile AppShortName + ".exe"
 #define ReadmeFile "ReadMe.txt"
 #define LicenseFile "License.rtf"
-#define LicenseTextFile "License.txt"
+#define LicenseTextFile "LICENSE.md"
 #define ChangeLogFile "CHANGELOG.md"
 #define UserGuide "UserGuide.md"
 #define InstDocsDir "Docs"
 #define InstUninstDir "Uninstall"
 #define InstDemoDir "Demo"
 #define OutDir SourcePath + "..\Exe"
+#define RootPath SourcePath + "..\"
 #define SrcExePath SourcePath + "..\Exe\"
 #define SrcDocsPath SourcePath + "..\Docs\"
 #define SrcDemoPath SourcePath + "..\Demo\"
@@ -41,8 +42,8 @@
 #define Company "DelphiDabbler.com"
 #define AppVersion DeleteToVerStart(GetFileProductVersion(ExeProg))
 #define Copyright GetStringFileInfo(ExeProg, LEGAL_COPYRIGHT)
-#define WebAddress "www.delphidabbler.com"
-#define WebURL "http://" + WebAddress + "/"
+#define WebAddress "delphidabbler.com"
+#define WebURL "https://" + WebAddress + "/"
 #define AppURL WebURL + "software/htmlres"
 
 [Setup]
@@ -94,9 +95,9 @@ Name: {app}\{#InstUninstDir}; Flags: uninsalwaysuninstall
 ; Executable files
 Source: {#SrcExePath}{#ExeFile}; DestDir: {app}; Flags: uninsrestartdelete
 ; Documentation
-Source: {#SrcDocsPath}{#LicenseTextFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
+Source: {#RootPath}{#LicenseTextFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
 Source: {#SrcDocsPath}{#ReadmeFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
-Source: {#SourcePath}{#ChangeLogFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
+Source: {#RootPath}{#ChangeLogFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
 Source: {#SrcDocsPath}{#UserGuide}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
 ; Demo
 Source: {#SrcDemoPath}*.*; DestDir: {app}\{#InstDemoDir}; Flags: ignoreversion

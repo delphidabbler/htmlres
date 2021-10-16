@@ -30,6 +30,8 @@ where:
 
 Spaces are not allowed between the `-m` command and the manifest file name. The file names specified in the manifest are, by default, relative to the folder from where _HTMLRes_ was executed. The `-r` option can be used to change this behaviour so that filenames are relative to the manifest file folder instead (see below).
 
+The manifest file is expected to be in the system default encoding unless it has a byte order mark prefix or preamble that identifies it as a UTF-16 or UTF-8 encoded file.
+
 `<out-file>` is the name of the generated resource file. Spaces are not allowed between the `-o` command and the output file name. This command is optional. If no output file name is specified then the default name `out.res` is used. The `-u` option controls how pre-existing output files are handled (see below).
 
 `options` is a sequence of zero or more of space separated options from the following list: 
@@ -96,6 +98,7 @@ The demo files are:
 | `style.css` | A style sheet for the web pages. |
 | `arrow.gif` | A GIF displayed in `index.html`. |
 | `Demo.hmfst` | A manifest file that lists the demo files to be built by _HTMLRes_. |
+| `Demo.utf8-hmfst` | Same as `Demo.hmfst` except that the file has a UTF8 prefix ("BOM"). It should generate _exactly_ the same output as `Demo.hmfst`. Used to test that _HTMLRes_ can automatically detect UTF8 format text files. |
 | `HTMLLib.dpr` | The Delphi source code for the resource-only DLL. |
 | `DemoReadMem.txt` | ReadMe file for demo code. Please read before using the demo code. |
 
@@ -116,4 +119,4 @@ The HTML file, its style sheet and the graphic are all stored in the DLL's resou
 ----
 
 
-This user guide is copyright © 2007-2021, [Peter D Johnson](https://gravatar.com/delphidabbler) and is licensed under a [Creative Commons CC BY-NC-SA 2.5 License](http://creativecommons.org/licenses/by-nc-sa/2.5).
+This user guide is copyright © 2007-2021, [Peter D Johnson](https://gravatar.com/delphidabbler) and is licensed under a [Creative Commons CC BY-NC-SA 2.5 License](https://creativecommons.org/licenses/by-nc-sa/2.5).

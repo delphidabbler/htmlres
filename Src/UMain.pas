@@ -1,7 +1,7 @@
 {
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * v. 2.0. If a copy of the MPL was not distributed with this file, You can
- * obtain one at http://mozilla.org/MPL/2.0/
+ * obtain one at https://mozilla.org/MPL/2.0/
  *
  * Copyright (C) 2004-2021, Peter Johnson (gravatar.com/delphidabbler).
  *
@@ -216,6 +216,10 @@ begin
       );
     ManFiles := TStringList.Create;
     try
+      // ** Unicode TStringList.LoadFromFile has default behaviour that it will
+      //    read UTF-8 or UTF-16 formatted manifest file providing they have a
+      //    suitable BOM or prefix. If there is no such prefix the file will be
+      //    assumed to be in the system default encoding.
       ManFiles.LoadFromFile(Params.ManifestFile);
       // process lines from manifest file (ignore blank and comment lines)
       for I := 0 to Pred(ManFiles.Count) do

@@ -1,7 +1,7 @@
 {
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * v. 2.0. If a copy of the MPL was not distributed with this file, You can
- * obtain one at http://mozilla.org/MPL/2.0/
+ * obtain one at https://mozilla.org/MPL/2.0/
  *
  * Copyright (C) 2004-2021, Peter Johnson (gravatar.com/delphidabbler).
  *
@@ -233,7 +233,7 @@ begin
   for I := 1 to ParamCount do
   begin
     Param := ParamStr(I);
-    if Param[1] in ['-', '/'] then
+    if CharInSet(Param[1], ['-', '/']) then
     begin
       // Process a switch
       if Length(Param) >= 2 then

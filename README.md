@@ -7,7 +7,7 @@ Description
 
 HTML Resource Compiler is a simple Windows command line application for creating or updating Windows 32 bit binary resource files that contain HTML code that can be displayed using Internet Explorer's `res://` protocol.
 
-> For details on how to use the protocol see the article [How to create and use HTML resource files](http://delphidabbler.com/articles?article=10).
+> For details on how to use the protocol see the article [How to create and use HTML resource files](https://delphidabbler.com/articles/article-10).
 
 HTMLRes takes a list of HTML and related support files and copies the content of each file into a separate HTML resource within a binary resource file. Each resource has the same name as the source file. This makes porting standard HTML files to embedded resources very easy – and it is something that the Embarcadero (née Borland) BRCC32 resource compiler won't allow!
 
