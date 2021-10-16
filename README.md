@@ -62,8 +62,3 @@ On 1st August 2009 the v1.2.0 development tree was moved into a Subversion repos
 Finally, the Subversion repo was converted to Git on 18th February 2014 and the repo was made public on GitHub.
 
 Release 1.2.1 was the first release from the Git repo on 20th February 2014.
-
-## To Do
-
-* Get a Unicode compatible version to work.
-
