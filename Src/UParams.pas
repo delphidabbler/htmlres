@@ -233,7 +233,7 @@ begin
   for I := 1 to ParamCount do
   begin
     Param := ParamStr(I);
-    if Param[1] in ['-', '/'] then
+    if CharInSet(Param[1], ['-', '/']) then
     begin
       // Process a switch
       if Length(Param) >= 2 then
