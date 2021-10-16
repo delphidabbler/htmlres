@@ -1,6 +1,11 @@
 DELPHIDABBLER HTML RESOURCE COMPILER README
 ================================================================================
 
+Scope
+--------------------------------------------------------------------------------
+
+This document relates to HTMLRes v1.3.x.
+
 What is HTML Resource Compiler?
 --------------------------------------------------------------------------------
 
@@ -51,6 +56,7 @@ to the installation folder, are:
   Demo\ sub folder - contains the following demo files:
     arrow.gif - GIF file displayed on index.html.
     Demo.hmfst - manifest file listing all demo files to be compiled by HTMLRes.
+    Demo.utf8-hmfst - UTF-8 version of Demo.hmfst.
     DemoReadMe.txt - ReadMe file for demo code. Please read before using the
       demo code.
     HTMLLib.dpr - Delphi project file for a resource only DLL.

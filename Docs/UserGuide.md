@@ -8,7 +8,7 @@ Each file is stored as a separate resource. Each resources is of type `HTML` (`#
 
 ## Scope
 
-This document relates to _HTMLRes_ v1.2.x.
+This document relates to _HTMLRes_ v1.3.x.
 
 ## Command Line
 
@@ -20,7 +20,7 @@ where:
 
 `<in-file-list>` is a sequence of zero or more file names. These files will be stored in the resource file. Relative file names are relative to the folder from where _HTMLRes_ was started. The `-r` option may be used to change this behaviour (see below).
 
-`<manifest-file>` is the name of a file that contains a list of files to be stored in the resource file. Each file name is placed on a separate line in the manifest file. Blank lines are ignored. Lines beginning with `#` are treated as comments and are also ignored. Comments cannot be placed on the same line as a file name. Here's an example manifest file: 
+`<manifest-file>` is the name of a file that contains a list of files to be stored in the resource file. Each file name is placed on a separate line in the manifest file. Blank lines are ignored. Lines beginning with `#` are treated as comments and are also ignored. Comments cannot be placed on the same line as a file name. Here's an example manifest file:
 
     # Files required for demo
     index.html
@@ -34,15 +34,15 @@ The manifest file is expected to be in the system default encoding unless it has
 
 `<out-file>` is the name of the generated resource file. Spaces are not allowed between the `-o` command and the output file name. This command is optional. If no output file name is specified then the default name `out.res` is used. The `-u` option controls how pre-existing output files are handled (see below).
 
-`options` is a sequence of zero or more of space separated options from the following list: 
+`options` is a sequence of zero or more of space separated options from the following list:
 
-* `-q` - Quite mode. Does not display any normal output. Any error messages are displayed. 
+* `-q` - Quite mode. Does not display any normal output. Any error messages are displayed.
 
 * `-Q` - Silent mode. No normal or error messages are displayed.
 
-* `-p` or `-P` - Causes the program to pause on completion and prompts the user to press return before closing the program. The prompt is always displayed, regardless of whether the `-q` or `-Q` options have been used. 
+* `-p` or `-P` - Causes the program to pause on completion and prompts the user to press return before closing the program. The prompt is always displayed, regardless of whether the `-q` or `-Q` options have been used.
 
-* `-r` or `-R` - Causes all relative file names to be taken as relative to the manifest file's directory. If this option is not specified then file names are relative to the directory where _HTMLRes_ was executed. The option applies to the preceding `-m` manifest file command. If there is no `-m` command then this option is ignored. `-r` applies to all relative file names, i.e. input file, output file and all files listed in a manifest file. 
+* `-r` or `-R` - Causes all relative file names to be taken as relative to the manifest file's directory. If this option is not specified then file names are relative to the directory where _HTMLRes_ was executed. The option applies to the preceding `-m` manifest file command. If there is no `-m` command then this option is ignored. `-r` applies to all relative file names, i.e. input file, output file and all files listed in a manifest file.
 
 * `-u:param` or `-U:param` - Specifies the action to be taken if an output file already exists. `param` indicates the action to take:
 
@@ -54,7 +54,7 @@ The manifest file is expected to be in the system default encoding unless it has
 
   * `-u:overwriteres` - Inserts HTML resources into the existing file, overwriting existing resources if there is a name clash. It is an error if the output file is not a valid resource file. In the event of an error the output file is not modified.
 
-* `-H`, `-h` or `-?` - Displays a help screen. The `-q` and `-Q` options are ignored. 
+* `-H`, `-h` or `-?` - Displays a help screen. The `-q` and `-Q` options are ignored.
 
 At least one input file must be provided, either directly on the command line or in a manifest file, unless the `-H`, `-h` or `-?` options are used.  See below for restrictions placed on file names.
 
@@ -87,9 +87,9 @@ If you are intending to use the `res://` protocol to access the HTML resources f
 
 An example Delphi project is supplied with the program. The demo files are installed in the `Demo` sub-folder of the main program installation folder.
 
-The demo project simply creates a resource only DLL that stores some HTML, CSS and GIF files that can be displayed in Internet Explorer. 
+The demo project simply creates a resource only DLL that stores some HTML, CSS and GIF files that can be displayed in Internet Explorer.
 
-The demo files are: 
+The demo files are:
 
 | File Name | Description |
 |-----------|-------------|
@@ -102,7 +102,7 @@ The demo files are:
 | `HTMLLib.dpr` | The Delphi source code for the resource-only DLL. |
 | `DemoReadMem.txt` | ReadMe file for demo code. Please read before using the demo code. |
 
-Before building the demo project using Delphi you must first start a command console window and navigate to the demo directory. Now run _HTMLRes_ as follows: 
+Before building the demo project using Delphi you must first start a command console window and navigate to the demo directory. Now run _HTMLRes_ as follows:
 
     HTMLRes -mDemo.hmfst -oHTML.res
 
@@ -110,11 +110,11 @@ This compiles the files specified in `Demo.hmfst` into the resource file `HTML.r
 
 The project file, `HTMLLib.dpr`, contains a resource statement that includes `HTML.res`. The project can now be compiled with Delphi to create the required resource DLL.
 
-If the demo DLL is stored in the `C:\HTMLRes\Demo` folder we can display the main page in Internet Explorer by entering the following URL in the browser's address bar: 
+If the demo DLL is stored in the `C:\HTMLRes\Demo` folder we can display the main page in Internet Explorer by entering the following URL in the browser's address bar:
 
     res://C:\HTMLRes\Demo\HTMLLib.dll/index.html
 
-The HTML file, its style sheet and the graphic are all stored in the DLL's resources along with a second page that can be displayed by clicking the link on the index page. 
+The HTML file, its style sheet and the graphic are all stored in the DLL's resources along with a second page that can be displayed by clicking the link on the index page.
 
 ----
 

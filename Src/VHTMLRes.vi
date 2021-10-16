@@ -10,8 +10,8 @@
 ; ------------------------------------------------------------------------------
 
 [Fixed File Info]
-File Version #=1, 2, 1, 5
-Product Version #=1, 2, 1, 0
+File Version #=1, 3, 0, 6
+Product Version #=1, 3, 0, 0
 File OS=4
 File Type=1
 File Sub-Type=0
@@ -28,7 +28,7 @@ Company Name=DelphiDabbler
 File Description=HTML Resource Compiler.
 File Version=v<#F1>.<#F2>.<#F3> build <#F4>
 Internal Name=<SHORTFNAME>
-Legal Copyright=Copyright (C) 2004-<YEAR> P D Johnson (www.delphidabbler.com).
+Legal Copyright=Copyright (C) 2004-<YEAR> P D Johnson (https://delphidabbler.com).
 Legal Trademark=
 Original File Name=HTMLRes.exe
 Private Build=
