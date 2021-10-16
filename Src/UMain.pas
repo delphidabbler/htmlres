@@ -216,6 +216,10 @@ begin
       );
     ManFiles := TStringList.Create;
     try
+      // ** Unicode TStringList.LoadFromFile has default behaviour that it will
+      //    read UTF-8 or UTF-16 formatted manifest file providing they have a
+      //    suitable BOM or prefix. If there is no such prefix the file will be
+      //    assumed to be in the system default encoding.
       ManFiles.LoadFromFile(Params.ManifestFile);
       // process lines from manifest file (ignore blank and comment lines)
       for I := 0 to Pred(ManFiles.Count) do
