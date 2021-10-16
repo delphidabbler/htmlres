@@ -1,58 +1,41 @@
 # ------------------------------------------------------------------------------
-# Makefile
+# This Source Code Form is subject to the terms of the Mozilla Public License,
+# v. 2.0. If a copy of the MPL was not distributed with this file, You can
+# obtain one at https://mozilla.org/MPL/2.0/
+#
+# Copyright (C) 2009-2021, Peter Johnson (gravatar.com/delphidabbler).
 #
 # Makefile for the project.
-#
-# ***** BEGIN LICENSE BLOCK *****
-#
-# Version: MPL 1.1
-#
-# The contents of this file are subject to the Mozilla Public License Version
-# 1.1 (the "License"); you may not use this file except in compliance with the
-# License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
-#
-# Software distributed under the License is distributed on an "AS IS" basis,
-# WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for
-# the specific language governing rights and limitations under the License.
-#
-# The Original Code is Makefile
-#
-# The Initial Developer of the Original Code is Peter Johnson
-# (http://www.delphidabbler.com/).
-#
-# Portions created by the Initial Developer are Copyright (C) 2009-2014 Peter
-# Johnson. All Rights Reserved.
-#
-# Contributors:
-#   NONE
-#
-# ***** END LICENSE BLOCK *****
 # ------------------------------------------------------------------------------
 
+# The following environment variables are required or supported:
+#
+# DELPHIROOT (required)
+#   Must be set to the installation path of the version of Delphi being used to
+#   compile the program. Delphi XE and later are supported.
+# VIEDROOT (optional)
+#   Must be set to the path to DelphiDabbler Version Information Editor. v2.11.2
+#   or later is required. If not set then Version Information Editor must be on
+#   the system path.
+# INNOSETUP (optional)
+#   Must be set to the path to Inno Setup. v5.x Unicode is required. If not set
+#   then Inno Setup must be on the system path.
+# ZIPROOT (optional)
+#   Must be set to the path to (PK) Zip. If not set then Zip.exe must be on the
+#   system path.
+# RELEASEFILENAME (optional)
+#   Specifies the name of the output release .zip file. If not set the default
+#   file name is used.
+
+# Check for required macros
+!ifndef DELPHIROOT
+!error DELPHIROOT environment variable required.
+!endif
 
 # Set bin output path
 BIN = ..\Bin
 
-# The preferred compiler is Delphi 7. If the DELPHI7 evironment variable
-# is set, it will be used and expected to Delphi 7 install directory.
-# If DELPHI7 is not set then the DELPHIROOT environment variable is examined.
-# This can be set to any Delphi compiler (should compile if later than Delphi
-# 7). If neither DELPHI7 nor DELPHIROOT is set then a Delphi compiler is
-# expected to be present on the system path.
-!ifdef DELPHI7
-DELPHIROOT = $(DELPHI7)
-!endif
-
-# Check for required macros
-!ifndef DELPHIROOT
-!error DELPHIROOT or DELPHI7 environment variable required.
-!endif
-!ifndef BIN
-!error BIN macro must be defined in calling script.
-!endif
-
 # Define common macros that access required build tools
-MAKE = "$(MAKEDIR)\Make.exe" -$(MAKEFLAGS)
 DCC32 = "$(DELPHIROOT)\Bin\DCC32.exe"
 BRCC32 = "$(DELPHIROOT)\Bin\BRCC32.exe"
 !ifdef VIEDROOT
@@ -72,7 +55,7 @@ ZIP = Zip.exe
 !endif
 
 # Implicit rules
-# Delphi projects are assumed to contain required output and seaSrch path
+# Delphi projects are assumed to contain required output and search path
 # locations in the project options .cfg file.
 .dpr.exe:
   @echo +++ Compiling Delphi Project $< +++
@@ -95,9 +78,8 @@ everything: config resources pascal setup release
 # Configure source folders
 config:
   @echo Configuring HTMLRes
-  # Create .cfg and .bdsproj files from templates
+  # Create .cfg file from template
   @copy /Y HTMLRes.cfg.tplt HTMLRes.cfg
-  @copy /Y HTMLRes.dof.tplt HTMLRes.dof
   # Create build folders
   @cd ..
   @if exist Bin rmdir /S /Q Bin
