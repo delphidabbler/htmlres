@@ -1,14 +1,10 @@
-HTML Resource Compiler (htmlres)
-================================
+# HTML Resource Compiler (htmlres)
 
-
-Scope
------
+## Scope
 
 This document relates to _HTMLRes_ v1.3.x.
 
-Description
------------
+## Description
 
 HTML Resource Compiler is a simple Windows command line application for creating or updating Windows 32 bit binary resource files that contain HTML code that can be displayed using Internet Explorer's `res://` protocol.
 
@@ -18,9 +14,7 @@ HTMLRes takes a list of HTML and related support files and copies the content of
 
 HTMLRes is particularly useful for embedding HTML files in the executable file of programs that display information using the Microsoft web browser control. Including HTML files in the program's resources means that is is not necessary to distribute the HTML files separately.
 
-
-Source Code
------------
+## Source Code
 
 HTMLRes is written in Object Pascal and targeted at Delphi 7, although any later non-Unicode compiler should suffice.
 
@@ -28,9 +22,7 @@ See `Build.html` in the repo root for information about how to build the program
 
 Each release from v1.2.0 is has a tag in the form vX.X.X where X.X.X is the release version number.
 
-
-Releases
---------
+## Releases
 
 Each release of HTMLRes from v1.2.1 is available from the program's GitHub repository's [Releases section](https://github.com/delphidabbler/htmlres/releases).
 
@@ -45,9 +37,7 @@ HTMLRes itself should be able to run on just about any 32 or 64 bit version of W
 
 In the unlikely event you need to run HTMLRes on an operating system earlier than Windows 2000 you will need to build it from source (see above).
 
-
-Documentation
--------------
+## Documentation
 
 User guide: `Docs/UserGuide.md`.
 
@@ -55,21 +45,15 @@ Installation notes etc.: `Docs/ReadMe.txt`.
 
 Change log: `CHANGELOG.md`.
 
-
-Bugs and Feature Requests
--------------------------
+## Bugs and Feature Requests
 
 An bug reports and feature requests via the GitHub issue tracker please.
 
-
-License
--------
+## License
 
 See `LICENSE.md` for details.
 
-
-A Little History
-----------------
+## A Little History
 
 Up to and including the release of v1.2.0, HTMLRes was not under version control. Known changes up until then are logged in the file `PreSVNHistory.txt` in the `Docs` sub-directory.
 
@@ -79,9 +63,7 @@ Finally, the Subversion repo was converted to Git on 18th February 2014 and the 
 
 Release 1.2.1 was the first release from the Git repo on 20th February 2014.
 
-
-To Do
------
+## To Do
 
 * Get a Unicode compatible version to work.
 
