@@ -1,7 +1,7 @@
 ; ------------------------------------------------------------------------------
 ; This Source Code Form is subject to the terms of the Mozilla Public License,
 ; v. 2.0. If a copy of the MPL was not distributed with this file, You can
-; obtain one at http://mozilla.org/MPL/2.0/
+; obtain one at https://mozilla.org/MPL/2.0/
 ;
 ; Copyright (C) 2008-2021, Peter Johnson (gravatar.com/delphidabbler).
 ;
@@ -42,8 +42,8 @@
 #define Company "DelphiDabbler.com"
 #define AppVersion DeleteToVerStart(GetFileProductVersion(ExeProg))
 #define Copyright GetStringFileInfo(ExeProg, LEGAL_COPYRIGHT)
-#define WebAddress "www.delphidabbler.com"
-#define WebURL "http://" + WebAddress + "/"
+#define WebAddress "delphidabbler.com"
+#define WebURL "https://" + WebAddress + "/"
 #define AppURL WebURL + "software/htmlres"
 
 [Setup]

@@ -41,6 +41,6 @@ The law of England and Wales applies to all licenses & disclaimers unless they s
 [2]: https://mozilla.org/MPL/2.0/
 [3]: https://github.com/delphidabbler/htmlres
 [4]: https://github.com/delphidabbler/htmlres/blob/master/Docs/MPL-2.0.txt
-[5]: http://creativecommons.org/publicdomain/zero/1.0/
+[5]: https://creativecommons.org/publicdomain/zero/1.0/
 [6]: https://opensource.org/licenses/MIT
-[7]: http://creativecommons.org/licenses/by-sa/4.0/
+[7]: https://creativecommons.org/licenses/by-sa/4.0/

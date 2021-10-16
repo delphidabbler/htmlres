@@ -96,7 +96,7 @@ Source Code
 HTMLRes is open source. Much of the source code is licensed under the Mozilla
 Public License and other open source licenses. Demo code is public domain.
 You can get the source code of the latest release from
-http://www.delphidabbler.com/software/htmlres.
+https://delphidabbler.com/software/htmlres.
 
 Source code of versions back to v1.2.0 can also be obtained from GitHub. Visit
 https://github.com/delphidabbler/htmlres/releases then select the required

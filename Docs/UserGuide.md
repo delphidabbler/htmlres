@@ -119,4 +119,4 @@ The HTML file, its style sheet and the graphic are all stored in the DLL's resou
 ----
 
 
-This user guide is copyright © 2007-2021, [Peter D Johnson](https://gravatar.com/delphidabbler) and is licensed under a [Creative Commons CC BY-NC-SA 2.5 License](http://creativecommons.org/licenses/by-nc-sa/2.5).
+This user guide is copyright © 2007-2021, [Peter D Johnson](https://gravatar.com/delphidabbler) and is licensed under a [Creative Commons CC BY-NC-SA 2.5 License](https://creativecommons.org/licenses/by-nc-sa/2.5).
