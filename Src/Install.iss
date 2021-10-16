@@ -27,13 +27,14 @@
 #define ExeFile AppShortName + ".exe"
 #define ReadmeFile "ReadMe.txt"
 #define LicenseFile "License.rtf"
-#define LicenseTextFile "License.txt"
+#define LicenseTextFile "LICENSE.md"
 #define ChangeLogFile "CHANGELOG.md"
 #define UserGuide "UserGuide.md"
 #define InstDocsDir "Docs"
 #define InstUninstDir "Uninstall"
 #define InstDemoDir "Demo"
 #define OutDir SourcePath + "..\Exe"
+#define RootPath SourcePath + "..\"
 #define SrcExePath SourcePath + "..\Exe\"
 #define SrcDocsPath SourcePath + "..\Docs\"
 #define SrcDemoPath SourcePath + "..\Demo\"
@@ -94,9 +95,9 @@ Name: {app}\{#InstUninstDir}; Flags: uninsalwaysuninstall
 ; Executable files
 Source: {#SrcExePath}{#ExeFile}; DestDir: {app}; Flags: uninsrestartdelete
 ; Documentation
-Source: {#SrcDocsPath}{#LicenseTextFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
+Source: {#RootPath}{#LicenseTextFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
 Source: {#SrcDocsPath}{#ReadmeFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
-Source: {#SourcePath}{#ChangeLogFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
+Source: {#RootPath}{#ChangeLogFile}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
 Source: {#SrcDocsPath}{#UserGuide}; DestDir: {app}\{#InstDocsDir}; Flags: ignoreversion
 ; Demo
 Source: {#SrcDemoPath}*.*; DestDir: {app}\{#InstDemoDir}; Flags: ignoreversion
