@@ -16,7 +16,7 @@ HTMLRes is particularly useful for embedding HTML files in the executable file o
 
 ## Source Code
 
-HTMLRes is written in Object Pascal and targeted at Delphi 7, although any later non-Unicode compiler should suffice.
+HTMLRes is written in Object Pascal and targeted at Delphi XE, although other, later, Delphi compilers may work.
 
 See `Build.html` in the repo root for information about how to build the program from code.
 
