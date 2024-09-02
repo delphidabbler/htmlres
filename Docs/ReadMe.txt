@@ -16,25 +16,20 @@ the source file.
 System Requirements
 --------------------------------------------------------------------------------
 
-HTMLRes itself should run on any 32 or 64 bit version of Windows. However the
-install program requires Windows 2000 or later.
-
-Should you need to run HTMLRes on an earlier operating system you will need to
-build it from source.
+HTMLRes and its installer required Windows 7 SP1 and later.
 
 Installation
 --------------------------------------------------------------------------------
 
 When installing or uninstalling you need to ensure that you have administrator
-privileges otherwise the installation can fail. On Windows Vista or later the
-system may prompt, if necessary, for an administrator password. It will also
-elevate the install process.
+privileges otherwise the installation can fail. The system may prompt, if
+necessary, for an administrator password. It will also elevate the install
+process.
 
 If you have HTML Resource Compiler 1.1 or earlier you should uninstall it using
-the Programs and Features (a.k.a. Add / Remove Programs) control panel applet
-before installing this version. Uninstalling v1.1 will leave two files,
-InstallLib.dll and UnInstall.exe behind in the installation folder. You should
-should delete these files manually.
+the Windows setting app before installing this version. Uninstalling v1.1 wil
+leave two files, InstallLib.dll and UnInstall.exe behind in the installation
+folder. You should delete these files manually.
 
 The program is distributed in a zip archive which contains two files -
 ReadMe.txt (this file) and HTMLRes-Setup-x.x.x.exe, where x.x.x. is the
@@ -59,7 +54,7 @@ to the installation folder, are:
     Demo.utf8-hmfst - UTF-8 version of Demo.hmfst.
     DemoReadMe.txt - ReadMe file for demo code. Please read before using the
       demo code.
-    HTMLLib.dpr - Delphi project file for a resource only DLL.
+    HTMLLib.dpr & HTMLLib.dproj - Delphi project files for a resource only DLL.
     index.html - main demo HTML page.
     page2.html - secondary demo HTML page.
     style.css - demo style sheet used by HTML pages.
@@ -75,12 +70,11 @@ to the installation folder, are:
 Uninstalling
 --------------------------------------------------------------------------------
 
-To uninstall HTMLRes open the Windows Control Panel and start the Programs and
-Features (a.k.a. Add / Remove Programs) applet. Select DelphiDabbler HTML
-Resource Compiler v1.x.x (where x.x is the minor version number) from the list
-of installed applications and click the Remove or Uninstall button. The
-uninstall program will now check if you want to go ahead with the
-uninstallation. Accept this prompt to continue with uninstallation.
+Uninstall HTMLRes via Windows Control Panel / Setting app. Select DelphiDabbler
+ Resource Compiler v1.x.x (where x.x is the minor version number) from the list
+of installed applications and click the Remove or Uninstall button.  uninstall
+program will now check if you want to go ahead with the uninstallation. Accept
+this prompt to continue with uninstallation.
 
 The uninstaller deletes any registry entries that were created by the installer.
 
@@ -93,7 +87,7 @@ the program and the demo code.
 Copyright and Licensing
 --------------------------------------------------------------------------------
 
-The program is copyright (c) 2004-2014, Peter D Johnson (@delphidabbler). See
+The program is copyright (c) 2004-2024, Peter D Johnson (@delphidabbler). See
 License.txt in the installation's Docs sub folder for licensing information.
 
 Source Code
@@ -113,7 +107,7 @@ https://github.com/delphidabbler/htmlres. Choose the required branch, or for
 the source code of stable releases, choose a tag in the form vX.X.X where X.X.X
 is the release version number.
 
-Source code licensing information is provided in the file LICENSE.md that will
-be in the root of the source code tree.
+Source code licensing information is provided in the file LICENSE.md in the root
+of the source code tree.
 
 --------------------------------------------------------------------------------
