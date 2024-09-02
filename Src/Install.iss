@@ -6,23 +6,28 @@
 ; Copyright (C) 2008-2021, Peter Johnson (gravatar.com/delphidabbler).
 ;
 ; HTML Resource Compiler install file generation script for use with Inno Setup.
-; ------------------------------------------------------------------------------
-
-
-; Deletes "Release " from beginning of S
-#define DeleteToVerStart(str S) \
-  /* assumes S begins with "Release " followed by version as x.x.x */ \
-  Local[0] = Copy(S, Len("Release ") + 1, 99), \
-  Local[0]
-
+;
 ; The following defines use these macros that are predefined by ISPP:
 ;   SourcePath - path where this script is located
 ;   GetStringFileInfo - gets requested version info string from an executable
-;   GetFileProductVersion - gets product version info string from an executable
+; 
+; The following define, which must be defined on the command line using the
+; /D option:
+;   AppShortName - short name of project. Exe file will be named by appending
+;     ".exe"
+;   AppVersion - version number of the application (must contain only digits,
+;     e.g. 1.2.3.4).
+;   AppVersionSuffix - any suffix to the application version number (must start)
+;     with "-" , e.g. "-beta.1"
+;   SetupOutDir - setup program output directory relative to project root
+;   SetupFileName - name of setup file to be created (without path)
+;   ExeInDir - directory containing compiled .exe file relative to project root
+;   DocsInDir - directory containing documentation relative to project root
+;   DemoInDir - directory containing demo files relative to project root
+; ------------------------------------------------------------------------------
 
 #define AppPublisher "DelphiDabbler"
 #define AppName "HTML Resource Compiler"
-#define AppShortName "HTMLRes"
 #define AppDir AppShortName
 #define ExeFile AppShortName + ".exe"
 #define ReadmeFile "ReadMe.txt"
@@ -33,14 +38,13 @@
 #define InstDocsDir "Docs"
 #define InstUninstDir "Uninstall"
 #define InstDemoDir "Demo"
-#define OutDir SourcePath + "..\Exe"
+#define OutDir SourcePath + "..\" + SetupOutDir
 #define RootPath SourcePath + "..\"
-#define SrcExePath SourcePath + "..\Exe\"
-#define SrcDocsPath SourcePath + "..\Docs\"
-#define SrcDemoPath SourcePath + "..\Demo\"
+#define SrcExePath SourcePath + "..\" + ExeInDir + "\"
+#define SrcDocsPath SourcePath + "..\" + DocsInDir + "\"
+#define SrcDemoPath SourcePath + "..\" + DemoInDir + "\"
 #define ExeProg SrcExePath + ExeFile
 #define Company "DelphiDabbler.com"
-#define AppVersion DeleteToVerStart(GetFileProductVersion(ExeProg))
 #define Copyright GetStringFileInfo(ExeProg, LEGAL_COPYRIGHT)
 #define WebAddress "delphidabbler.com"
 #define WebURL "https://" + WebAddress + "/"
@@ -67,13 +71,15 @@ Compression=lzma/ultra
 SolidCompression=true
 InternalCompressLevel=ultra
 OutputDir={#OutDir}
-OutputBaseFilename={#AppShortName}-Setup-{#AppVersion}
+OutputBaseFilename={#SetupFileName}
 VersionInfoVersion={#AppVersion}
+VersionInfoTextVersion={#AppVersion}
+VersionInfoProductVersion={#AppVersion}
+VersionInfoProductTextVersion={#AppVersion}{#AppVersionSuffix}
 VersionInfoCompany={#Company}
 VersionInfoDescription=Installer for {#AppName}
-VersionInfoTextVersion={#AppVersion}
 VersionInfoCopyright={#Copyright}
-MinVersion=0,5.0
+MinVersion=6.1sp1
 TimeStampsInUTC=true
 ShowLanguageDialog=yes
 RestartIfNeededByRun=false
