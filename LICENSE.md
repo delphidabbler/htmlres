@@ -25,7 +25,7 @@ All documentation, with the exception of this file (`LICENSE.md`) and `Docs/Lice
 
 Sufficient attribution will be to note the copyright date, the name of the copyright holder and to provide a link to the GitHub repository at [https://github.com/delphidabbler/htmlres][3].
 
-Documentation files are files in the repository that have `.md`, `.txt`, `.rtf` or `.html` extensions.
+Documentation files are files in the repository that have `.md`, `.txt` or `.rtf` extensions.
 
 This file and `Docs/License.rtf` must not be modified and must be redistributed as-is unless explicit permission of the copyright holder is given.
 
