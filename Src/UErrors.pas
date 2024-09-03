@@ -3,7 +3,7 @@
  * v. 2.0. If a copy of the MPL was not distributed with this file, You can
  * obtain one at https://mozilla.org/MPL/2.0/
  *
- * Copyright (C) 2004-2021, Peter Johnson (gravatar.com/delphidabbler).
+ * Copyright (C) 2004-2024, Peter Johnson (gravatar.com/delphidabbler).
  *
  * Implements a custom exception class that incorporates an error code number
  * that HTMLRes uses as its exit code. Defines error code constants.

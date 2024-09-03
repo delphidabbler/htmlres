@@ -6,7 +6,22 @@ All notable changes to this project are documented in this file.
 
 This change log begins with v1.0.0. There were no pre-release v0.x.x releases. Releases are listed in reverse version number order.
 
+## v1.3.1 - 2024-09-03
+
++ Changed to compile with Delphi 12.1 instead of Delphi XE [issue #16]. The were no functional changes other than:
+    - The program will no longer run on Windows versions prior to Windows 7 SP1.
+    - The product version information string was reformated to be compatible with the new automated release process.
++ Refactored the version information definition file to get data that changes at every release from a new `VERSION` file.
++ Completely revised the build and release process [issue #18]:
+    - Added new `Deploy.bat` script to automate the release process.
+    - Added ability to build all required resources from within the IDE.
+    - Removed the redundant make and config file.
++ Documentation:
+    - Updated re changes to the build and release process, including re-writing and replacing `Build.html` with `Build.md`.
+    - Minor corrections and edits [including issue #14].
+
 ## v1.3.0 - 2021-10-16
+
 + Implemented a minimum of Unicode support:
     - Modified to enable compilation with a Unicode compatible compiler.
     - UTF-8 and UTF-16 encoded manifest files are now supported providing such files have a suitable BOM or prefix, otherwise the system default encoding is assumed:
@@ -26,6 +41,7 @@ This change log begins with v1.0.0. There were no pre-release v0.x.x releases. R
     - Demos public domain dedication clarified by use of [CC-0][6] license.
 
 ## v1.2.1 - 2014-02-20
+
 + Fixed non-standard bullet characters in help screen.
 + Compiled against latest versions of PJResourceFile and PJVersionInfo library units.
 + Installer now requires Windows 2000 or later to run.
@@ -33,19 +49,23 @@ This change log begins with v1.0.0. There were no pre-release v0.x.x releases. R
 + Updated documentation.
 
 ## v1.2.0 - 2008-08-23
+
 + Added new -u command that enables resources to be inserted and updated in pre-existing resource files.
 + Replaced command line installer with a Windows GUI installer built with Inno Setup.
 
 ## v1.1.0 - 2006-05-29
+
 + Added new -r command that enables file names to be relative to directory containing manifest instead of program execution directory.
 + Changed message displayed when program starts.
 + Changed to new open source EULA for executable code (source still available under MPL).
 
 ## v1.0.1 - 2004-09-18
+
 + Rebuilt using [PJResFile][2] resource file library unit rather than custom resource file handling code.
 + Updated documentation, including new PAD file.
 
 ## v1.0.0 - 2004-06-26
+
 + Original version including demo code and documentation, licensed under Mozilla Public License v1.1.
 
 [1]: https://delphidabbler.com/software/htmlres

@@ -4,7 +4,7 @@ DELPHIDABBLER HTML RESOURCE COMPILER README
 Scope
 --------------------------------------------------------------------------------
 
-This document relates to HTMLRes v1.3.x.
+This document relates to HTMLRes v1.3.1 and later.
 
 What is HTML Resource Compiler?
 --------------------------------------------------------------------------------

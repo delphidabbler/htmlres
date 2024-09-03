@@ -1,6 +1,6 @@
 # License
 
-_HTML Resource Compiler_ is copyright © 2004-2021 by [Peter D Johnson][1].
+_HTML Resource Compiler_ is copyright © 2004-2024 by [Peter D Johnson][1].
 
 ## Executable Program
 
@@ -10,7 +10,7 @@ The executable program, `HTMLRes.exe`, is made available under the terms of the 
 
 Source code is available from the [`delphidabbler/htmlres`][3] repository on GitHub.
 
-Most of the source code is licensed under the [Mozilla Public License v2.0][2]. Many files carry license information and a copyright statement. Those that do not have such information are copyright © 2021 by [Peter D Johnson][1].
+Most of the source code is licensed under the [Mozilla Public License v2.0][2]. Many files carry license information and a copyright statement. Those that do not have such information are copyright © 2024 by [Peter D Johnson][1].
 
 The full text of the Mozilla Public License can found in [`MPL-2.0.txt`][4].
 
@@ -21,7 +21,7 @@ Exceptions are:
 
 ## Documentation
 
-All documentation, with the exception of this file (`LICENSE.md`) and `Docs/License.rtf` is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License [(CC BY-SA 4.0)][7], copyright © 2021 by [Peter D Johnson][1].
+All documentation, with the exception of this file (`LICENSE.md`) and `Docs/License.rtf` is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License [(CC BY-SA 4.0)][7], copyright © 2024 by [Peter D Johnson][1].
 
 Sufficient attribution will be to note the copyright date, the name of the copyright holder and to provide a link to the GitHub repository at [https://github.com/delphidabbler/htmlres][3].
 
