@@ -3,7 +3,7 @@
  * v. 2.0. If a copy of the MPL was not distributed with this file, You can
  * obtain one at https://mozilla.org/MPL/2.0/
  *
- * Copyright (C) 2004-2021, Peter Johnson (gravatar.com/delphidabbler).
+ * Copyright (C) 2004-2024, Peter Johnson (gravatar.com/delphidabbler).
  *
  * Implements a class that handles the HTML Resource Compiler's main program
  * processing.
@@ -19,7 +19,7 @@ interface
 
 uses
   // Delphi
-  Classes,
+  System.Classes,
   // Project
   UParams;
 
@@ -102,7 +102,8 @@ implementation
 
 uses
   // Delphi
-  SysUtils, Windows,
+  System.SysUtils,
+  WinApi.Windows,
   // DelphiDabbler library
   PJResFile, PJVersionInfo,
   // Project

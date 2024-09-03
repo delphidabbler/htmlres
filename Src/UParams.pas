@@ -3,7 +3,7 @@
  * v. 2.0. If a copy of the MPL was not distributed with this file, You can
  * obtain one at https://mozilla.org/MPL/2.0/
  *
- * Copyright (C) 2004-2021, Peter Johnson (gravatar.com/delphidabbler).
+ * Copyright (C) 2004-2024, Peter Johnson (gravatar.com/delphidabbler).
  *
  * Implements class that parses the HTML Resource Compiler's command line, lists
  * errors and exposes information from command line as properties.
@@ -18,7 +18,7 @@ interface
 
 uses
   // Delphi
-  Classes;
+  System.Classes;
 
 
 type
@@ -125,7 +125,7 @@ implementation
 
 uses
   // Delphi
-  SysUtils;
+  System.SysUtils;
 
 
 const

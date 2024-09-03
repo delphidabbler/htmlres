@@ -1,42 +1,46 @@
-; ------------------------------------------------------------------------------
+﻿; ------------------------------------------------------------------------------
 ; This Source Code Form is subject to the terms of the Mozilla Public License,
 ; v. 2.0. If a copy of the MPL was not distributed with this file, You can
 ; obtain one at https://mozilla.org/MPL/2.0/
 ;
-; Copyright (C) 2004-2021, Peter Johnson (gravatar.com/delphidabbler).
+; Copyright (C) 2004-2024, Peter Johnson (gravatar.com/delphidabbler).
 ;
 ; Version information description file used to create VHTMLRes.res resource
 ; file.
 ; ------------------------------------------------------------------------------
 
+[Macros]
+Import:version=VERSION
+
 [Fixed File Info]
-File Version #=1, 3, 0, 6
-Product Version #=1, 3, 0, 0
+File Version #=<%version.release>.<%version.build>
+Product Version #=<%version.release>
+File Sub-Type=0
 File OS=4
 File Type=1
-File Sub-Type=0
-File Flags Mask=0
 File Flags=0
+File Flags Mask=0
 
 [Variable File Info]
-Language=2057
 Character Set=1252
+Language=2057
 
 [String File Info]
-Comments=
-Company Name=DelphiDabbler
 File Description=HTML Resource Compiler.
-File Version=v<#F1>.<#F2>.<#F3> build <#F4>
+Product Version=<#P1>.<#P2>.<#P3><%version.suffix>
+Comments=
+Legal Copyright=Copyright © 2004-<YEAR> P D Johnson (https://delphidabbler.com).
 Internal Name=<SHORTFNAME>
-Legal Copyright=Copyright (C) 2004-<YEAR> P D Johnson (https://delphidabbler.com).
-Legal Trademark=
+Company Name=DelphiDabbler
 Original File Name=HTMLRes.exe
 Private Build=
 Product Name=DelphiDabbler HTML Resource Compiler.
-Product Version=Release <#P1>.<#P2>.<#P3>
 Special Build=
+Legal Trademark=
+File Version=v<#F1>.<#F2>.<#F3> build <#F4>
 
 [Configuration Details]
-Identifier=VERINFO
+ResOutputDir=
 NumRCComments=0
-
+Identifier=VERINFO
+FileVersion=2
