@@ -6,6 +6,20 @@ All notable changes to this project are documented in this file.
 
 This change log begins with v1.0.0. There were no pre-release v0.x.x releases. Releases are listed in reverse version number order.
 
+## v1.3.1 - 2024-09-03
+
++ Changed to compile with Delphi 12.1 instead of Delphi XE [issue #16]. The were no functional changes other than:
+    - The program will no longer run on Windows versions prior to Windows 7 SP1.
+    - The product version information string was reformated to be compatible with the new automated release process.
++ Refactored the version information definition file to get data that changes at every release from a new `VERSION` file.
++ Completely revised the build and release process [issue #18]:
+    - Added new `Deploy.bat` script to automate the release process.
+    - Added ability to build all required resources from within the IDE.
+    - Removed the redundant make and config file.
++ Documentation:
+    - Updated re changes to the build and release process, including re-writing and replacing `Build.html` with `Build.md`.
+    - Minor corrections and edits [including issue #14].
+
 ## v1.3.0 - 2021-10-16
 
 + Implemented a minimum of Unicode support:
