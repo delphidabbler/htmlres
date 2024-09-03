@@ -32,7 +32,7 @@ implementation
 
 uses
   // Delphi
-  SysUtils,
+  System.SysUtils,
   // DelphiDabbler component
   PJVersionInfo;
 
