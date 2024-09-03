@@ -2,7 +2,7 @@
 
 ## Scope
 
-This document relates to _HTMLRes_ v1.4.x.
+This document relates to _HTMLRes_ v1.3.1 and later.
 
 ## Description
 

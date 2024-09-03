@@ -6,7 +6,7 @@ _HTMLRes_ is written in Object Pascal and is targeted at Delphi 12.1 and later.
 
 Development can take place entirely within the IDE providing some prerequisites are met. However releases must be built using the `Deploy.bat` script.
 
-> These notes apply only to the source code of releases from _HTMLRes_ v1.4.x.
+> These notes apply only to the source code of release v1.3.1 and later.
 
 ## Prerequisites
 
